@@ -1,0 +1,102 @@
+/* Styles extracted from index.html */
+:root {
+    --charcoal: #303030;
+    --burgundy: #721021;
+    --offwhite: #E8E6E1;
+}
+
+body {
+    background-color: var(--charcoal);
+    color: var(--offwhite);
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+.font-cinzel {
+    font-family: 'Cinzel', serif;
+}
+
+.text-burgundy {
+    color: var(--burgundy);
+}
+
+.bg-burgundy {
+    background-color: var(--burgundy);
+}
+
+/* Estética Editorial: Espaciado y Líneas */
+.editorial-line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(232, 230, 225, 0.2), transparent);
+    width: 100%;
+}
+
+/* Hero Text Animation */
+.reveal-text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid var(--burgundy);
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--burgundy); }
+}
+
+/* Botón Luxury "Soft Touch" */
+.btn-luxury {
+    position: relative;
+    padding: 1.25rem 2.5rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    border: 1px solid rgba(232, 230, 225, 0.2);
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    overflow: hidden;
+}
+
+.btn-luxury:hover {
+    color: var(--charcoal);
+    border-color: var(--offwhite);
+}
+
+.btn-luxury::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--offwhite);
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: -1;
+}
+
+.btn-luxury:hover::before {
+    left: 0;
+}
+
+/* Glassmorphism Sections */
+.glass-card {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Smooth Reveal on Scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}

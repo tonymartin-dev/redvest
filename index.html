@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Vest | Sastrería Musical | Jazz & Soul Live</title>
+    <!-- Framework & Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;300;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="fixed w-full z-50 px-8 py-10 flex justify-between items-center bg-transparent transition-all duration-700"
+        id="main-nav">
+        <div class="font-cinzel text-xl tracking-[0.3em] uppercase group">
+            Red <span class="text-burgundy transition-all duration-500 group-hover:text-white">Vest</span>
+        </div>
+        <div class="hidden md:flex space-x-12 text-[10px] tracking-[0.5em] uppercase font-light">
+            <a href="#inicio" class="hover:text-burgundy transition-colors">Inicio</a>
+            <a href="#historia" class="hover:text-burgundy transition-colors">El Dúo</a>
+            <a href="#formatos" class="hover:text-burgundy transition-colors">Formatos</a>
+            <a href="#contacto" class="text-burgundy font-medium underline underline-offset-8 decoration-1">Booking</a>
+        </div>
+        <div class="md:hidden text-2xl">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="inicio"
+        class="relative h-screen flex flex-col justify-center items-center text-center px-4 overflow-hidden">
+        <!-- Background Decor -->
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(114,16,33,0.05)_0%,transparent_70%)]">
+        </div>
+
+        <div class="mb-12 transition-transform duration-1000 hover:scale-105">
+            <!-- Jewel Symbol Definivo d914e5 -->
+            <svg width="120" height="120" viewBox="0 0 100 100" class="drop-shadow-2xl">
+                <path d="M22 30 C 22 30, 25 75, 55 88" stroke="white" stroke-width="1" fill="none" opacity="0.8" />
+                <path d="M22 30 C 45 25, 45 45, 35 50 L 58 88" stroke="white" stroke-width="1" fill="none"
+                    opacity="0.8" />
+                <path d="M42 42 L 55 92 L 78 30" stroke="#721021" stroke-width="2.2" fill="none"
+                    stroke-linecap="round" />
+                <circle cx="55" cy="78" r="0.8" fill="#721021" />
+                <circle cx="55" cy="83" r="0.8" fill="#721021" />
+                <circle cx="55" cy="88" r="0.8" fill="#721021" />
+            </svg>
+        </div>
+
+        <h1 class="font-cinzel text-5xl md:text-8xl mb-6 tracking-[0.2em] uppercase">
+            RED <span class="text-burgundy">VEST</span>
+        </h1>
+        <div class="inline-block">
+            <p class="font-light text-xs md:text-sm tracking-[0.8em] uppercase opacity-40 mb-16">Sastrería Musical •
+                Live Jazz & Soul</p>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6">
+            <a href="#contacto" class="btn-luxury">Solicitar Dossier</a>
+            <a href="#formatos"
+                class="px-12 py-5 text-[10px] uppercase tracking-[0.4em] opacity-40 hover:opacity-100 transition-opacity">Ver
+                Formatos</a>
+        </div>
+
+        <div class="absolute bottom-12 animate-bounce opacity-20">
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <div class="editorial-line"></div>
+
+    <!-- SECCIÓN: EL DÚO (EDITORIAL) -->
+    <section id="historia" class="py-32 md:py-48 px-8 reveal">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div class="space-y-12">
+                <span class="text-burgundy text-[10px] tracking-[0.6em] uppercase">Música a medida</span>
+                <h2 class="font-cinzel text-3xl md:text-5xl leading-tight">La elegancia es <br><span
+                        class="italic text-burgundy font-light">nuestra partitura</span></h2>
+                <div class="h-px w-24 bg-burgundy"></div>
+                <p class="font-light text-lg leading-relaxed opacity-70">
+                    Red Vest nace de la necesidad de devolver la exclusividad a la música en vivo. No somos solo un
+                    acompañamiento; somos la costura invisible que une el lujo visual con la calidez del Jazz y el Soul
+                    clásico.
+                </p>
+                <p class="font-light text-lg leading-relaxed opacity-70">
+                    Nuestra formación de piano y voz reinterpreta los grandes estándares internacionales, desde la era
+                    dorada de Broadway hasta los matices modernos del blues, siempre bajo una estética de gala
+                    impecable.
+                </p>
+            </div>
+            <div class="relative group">
+                <div class="aspect-[3/4] bg-[#252525] border border-white/5 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1514525253361-bee8a48740ad?auto=format&fit=crop&q=80&w=800"
+                        alt="Musical Atmosphere"
+                        class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-1000">
+                    <div class="absolute inset-0 border-[20px] border-charcoal/50"></div>
+                </div>
+                <div
+                    class="absolute -bottom-10 -left-10 w-40 h-40 bg-burgundy/10 -z-10 transition-transform group-hover:translate-x-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: FORMATOS (TILES) -->
+    <section id="formatos" class="py-32 bg-[#2a2a2a] px-8 reveal">
+        <div class="max-w-6xl mx-auto text-center mb-24">
+            <h2 class="font-cinzel text-3xl tracking-[0.3em] uppercase mb-4">Experiencias</h2>
+            <p class="text-[10px] tracking-[0.5em] uppercase opacity-40 italic">Diseñadas para entornos selectos</p>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+            <!-- Formato 1 -->
+            <div class="glass-card p-12 text-center group hover:border-burgundy/40 transition-all duration-500">
+                <div class="text-burgundy text-4xl mb-8 opacity-50 group-hover:opacity-100 transition-opacity">
+                    <i class="fa-solid fa-martini-glass-citrus"></i>
+                </div>
+                <h3 class="font-cinzel text-xl mb-6 tracking-widest">Cocktail Lounge</h3>
+                <p class="font-light text-sm leading-relaxed opacity-50 mb-8">Atmósfera sutil. El fondo perfecto para
+                    recepciones de gala y bienvenidas corporativas.</p>
+                <span class="text-[9px] tracking-[0.4em] uppercase text-burgundy">Background / Intimo</span>
+            </div>
+            <!-- Formato 2 -->
+            <div class="glass-card p-12 text-center group border-burgundy/20 bg-burgundy/5 transform md:-translate-y-4">
+                <div class="text-burgundy text-4xl mb-8">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <h3 class="font-cinzel text-xl mb-6 tracking-widest">Gala Dinner</h3>
+                <p class="font-light text-sm leading-relaxed opacity-80 mb-8">La música como protagonista. Un viaje
+                    emocional a través de los grandes clásicos del Soul.</p>
+                <span class="text-[9px] tracking-[0.4em] uppercase text-burgundy">Presente / Emocional</span>
+            </div>
+            <!-- Formato 3 -->
+            <div class="glass-card p-12 text-center group hover:border-burgundy/40 transition-all duration-500">
+                <div class="text-burgundy text-4xl mb-8 opacity-50 group-hover:opacity-100 transition-opacity">
+                    <i class="fa-solid fa-crown"></i>
+                </div>
+                <h3 class="font-cinzel text-xl mb-6 tracking-widest">Private Elite</h3>
+                <p class="font-light text-sm leading-relaxed opacity-50 mb-8">Curaduría total. Selección de repertorio a
+                    medida para residencias y eventos privados.</p>
+                <span class="text-[9px] tracking-[0.4em] uppercase text-burgundy">Custom / Exclusivo</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: MULTIMEDIA -->
+    <section class="py-32 px-4 reveal">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div
+                    class="aspect-video bg-[#222] border border-white/5 flex items-center justify-center relative group overflow-hidden">
+                    <div class="absolute inset-0 bg-burgundy opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                    <i
+                        class="fa-brands fa-youtube text-4xl opacity-20 group-hover:opacity-100 group-hover:text-burgundy transition-all duration-500"></i>
+                    <span class="absolute bottom-6 left-6 text-[9px] tracking-[0.4em] uppercase opacity-30">Escuchar
+                        Soul Selection</span>
+                </div>
+                <div
+                    class="aspect-video bg-[#222] border border-white/5 flex items-center justify-center relative group overflow-hidden">
+                    <div class="absolute inset-0 bg-burgundy opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                    <i
+                        class="fa-brands fa-youtube text-4xl opacity-20 group-hover:opacity-100 group-hover:text-burgundy transition-all duration-500"></i>
+                    <span class="absolute bottom-6 left-6 text-[9px] tracking-[0.4em] uppercase opacity-30">Escuchar
+                        Jazz Session</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: CONTACTO (BOOKING) -->
+    <section id="contacto" class="py-32 px-8 reveal">
+        <div class="max-w-3xl mx-auto text-center">
+            <span class="text-burgundy text-[10px] tracking-[0.6em] uppercase mb-8 block">Disponibilidad</span>
+            <h2 class="font-cinzel text-3xl md:text-5xl mb-16 tracking-widest leading-tight">Reserve su fecha <br>en la
+                <span class="italic font-light">Sastrería</span></h2>
+
+            <form class="space-y-12 text-left">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="relative">
+                        <input type="text"
+                            class="w-full bg-transparent border-b border-white/10 py-4 outline-none focus:border-burgundy transition-colors text-[10px] tracking-widest uppercase"
+                            placeholder="Su Nombre">
+                    </div>
+                    <div class="relative">
+                        <input type="email"
+                            class="w-full bg-transparent border-b border-white/10 py-4 outline-none focus:border-burgundy transition-colors text-[10px] tracking-widest uppercase"
+                            placeholder="Email de contacto">
+                    </div>
+                </div>
+                <div class="relative">
+                    <input type="text"
+                        class="w-full bg-transparent border-b border-white/10 py-4 outline-none focus:border-burgundy transition-colors text-[10px] tracking-widest uppercase"
+                        placeholder="Fecha y Lugar del Evento">
+                </div>
+                <div class="relative text-center pt-8">
+                    <button type="submit" class="btn-luxury w-full md:w-auto">Enviar Solicitud</button>
+                </div>
+            </form>
+
+            <div class="mt-32 opacity-30 text-[9px] tracking-[0.6em] uppercase flex justify-center space-x-12">
+                <a href="#" class="hover:text-burgundy transition-colors">Instagram</a>
+                <a href="#" class="hover:text-burgundy transition-colors">Youtube</a>
+                <a href="#" class="hover:text-burgundy transition-colors">Spotify</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 text-center text-[8px] tracking-[0.8em] uppercase opacity-20">
+        &copy; 2024 Red Vest Music &mdash; La elegancia es nuestra partitura
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
