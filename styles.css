@@ -1,7 +1,7 @@
 /* Styles extracted from index.html */
 :root {
-    --charcoal: #303030;
-    --burgundy: #721021;
+    --charcoal: #1C1C1C;
+    --burgundy: #6D1821;
     --offwhite: #E8E6E1;
 }
 
@@ -22,6 +22,10 @@ body {
 
 .bg-burgundy {
     background-color: var(--burgundy);
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 /* Estética Editorial: Espaciado y Líneas */
