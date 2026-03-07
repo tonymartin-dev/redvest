@@ -18,7 +18,13 @@
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;300;500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+
+	<!-- Preload important open-graph / hero image to improve LCP -->
+	<link rel="preload" as="image" href="https://redvestmusic.com/assets/RV_Stacked_Logo_bg_Negative.png">
+	<!-- Preload main script to fetch earlier without blocking -->
+	<link rel="preload" href="/script.js" as="script">
 	<link rel="icon" href="assets/favicon.png" type="image/png">
 	<link rel="apple-touch-icon" href="assets/favicon.png">
 		<!-- Open Graph / Social -->
@@ -1082,7 +1088,7 @@
         &copy; 2024 Red Vest Music &mdash; La elegancia es nuestra partitura
     </footer>
 
-    <script src="script.js"></script>
+	<script src="script.js" defer></script>
 </body>
 
 </html>
