@@ -1,0 +1,33 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  # Redirect www to canonical non-www (preserves path)
+  from = "https://www.redvestmusic.com/*"
+  to = "https://redvestmusic.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  # Remove trailing slashes (e.g. /about/ -> /about)
+  from = "/*/"
+  to = "/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  # Redirect explicit index.html to site root
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[headers]]
+  # Basic security headers and a base canonical Link header
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Link = "<https://redvestmusic.com/>; rel=\"canonical\""
