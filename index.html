@@ -966,11 +966,16 @@
                 </p>
             </div>
             <div class="relative group">
-                <div class="aspect-[3/4] bg-[#252525] border border-white/5 overflow-hidden relative">
-					<img src="assets/main_photo.webp"
-						alt="Musical Atmosphere"
-						class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-1000"
-						width="896" height="1184" fetchpriority="high" decoding="async">
+				<div class="aspect-[3/4] bg-[#252525] border border-white/5 overflow-hidden relative">
+					<picture>
+						<source type="image/webp" 
+							srcset="assets/main_photo-480.webp 480w, assets/main_photo-768.webp 768w, assets/main_photo-896.webp 896w"
+							sizes="(max-width:768px) 100vw, 50vw">
+						<img src="assets/main_photo.webp"
+							alt="Musical Atmosphere"
+							class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-1000" 
+							width="896" height="1184" fetchpriority="high" decoding="async">
+					</picture>
                     <div class="absolute inset-0 border-[20px] border-charcoal/50"></div>
                 </div>
                 <div
