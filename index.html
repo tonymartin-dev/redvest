@@ -12,11 +12,20 @@
 	<meta name="theme-color" content="#303030">
     <!-- Framework & Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;300;500&display=swap"
-        rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<!-- Load Google Fonts non-blocking: preload stylesheet then swap rel -->
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;300;500&display=swap" as="style" onload="this.rel='stylesheet'">
+		<noscript>
+			<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;300;500&display=swap" rel="stylesheet">
+		</noscript>
+
+		<!-- Critical inline CSS: background, base colors and safe font-family to avoid FOUC -->
+		<style>
+			html,body{background:#1C1C1C;color:#E8E6E1;height:100%}
+			body{font-family: Montserrat, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;margin:0}
+			.font-cinzel{font-family: Cinzel, serif}
+		</style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="styles.css"></noscript>
