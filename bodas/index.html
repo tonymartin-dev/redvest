@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Vest | Bodas y Eventos Exclusivos</title>
+    <!-- Tipografías: Cinzel para títulos y Montserrat para cuerpo -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;300;500&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --color-fondo: #F9F7F2;
+            --color-rojo: #A62626;
+            --color-texto: #2C2C2C;
+            --color-oro-suave: #C5A059;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            scroll-behavior: smooth;
+        }
+
+        h1,
+        h2,
+        h3,
+        .serif {
+            font-family: 'Cinzel', serif;
+        }
+
+        .btn-primary {
+            background-color: var(--color-rojo);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #851e1e;
+            transform: translateY(-2px);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(166, 38, 38, 0.1);
+        }
+
+        .section-padding {
+            padding: 80px 20px;
+        }
+
+        /* Estilo para los iconos de valor */
+        .u-icon {
+            color: var(--color-rojo);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+
+	<link rel="icon" href="../assets/favicon.png" type="image/png">
+	<link rel="apple-touch-icon" href="../assets/favicon.png">
+</head>
+
+<body>
+
+    <!-- Navegación Minimalista -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tighter uppercase serif">
+                <a href="../index.html"><img id="linear_logo" src="../assets/RV_Linear_Logo_Positive.svg"
+                        alt="Red Vest Logo" class="h-8"></a>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-semibold">
+                <a href="#servicios" class="hover:text-red-800 transition">Servicios</a>
+                <a href="#tecnico" class="hover:text-red-800 transition">WP & Logística</a>
+                <a href="#contacto" class="text-red-700">Reservar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <!-- Imagen sugerente de ambiente elegante -->
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2000"
+                alt="Ambiente de boda elegante" class="w-full h-full object-cover opacity-30">
+        </div>
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <span class="uppercase tracking-[0.3em] text-xs mb-4 block font-semibold text-gray-500">Música en vivo con
+                clase</span>
+            <h1 class="text-5xl md:text-7xl mb-6 leading-tight">La banda sonora del día más importante.</h1>
+            <p class="text-lg md:text-xl font-light mb-10 text-gray-600">Elegancia acústica y versatilidad diseñada para
+                encajar en bodas con estilo.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#contacto"
+                    class="btn-primary text-white px-10 py-4 rounded-full font-semibold shadow-lg">Solicitar
+                    Disponibilidad</a>
+                <a href="#tecnico"
+                    class="bg-white border border-gray-200 px-10 py-4 rounded-full font-semibold hover:bg-gray-50 transition">Dossier
+                    Técnico</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Propuesta de Valor (UVP) -->
+    <section id="servicios" class="section-padding max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-12 text-center">
+            <div class="p-6">
+                <div class="u-icon">✧</div>
+                <h3 class="text-2xl mb-4">Adaptabilidad Estética</h3>
+                <p class="text-gray-500 font-light leading-relaxed">Nos mimetizamos con vuestro evento. Desde el cóctel
+                    más íntimo hasta el banquete más sofisticado.</p>
+            </div>
+            <div class="p-6">
+                <div class="u-icon">◈</div>
+                <h3 class="text-2xl mb-4">Sonido Premium</h3>
+                <p class="text-gray-500 font-light leading-relaxed">Equipo propio de alta gama. Montaje rápido, discreto
+                    y estéticamente limpio. Sin cables a la vista.</p>
+            </div>
+            <div class="p-6">
+                <div class="u-icon">𝄢</div>
+                <h3 class="text-2xl mb-4">Repertorio Curado</h3>
+                <p class="text-gray-500 font-light leading-relaxed">Éxitos actuales y clásicos reinterpretados con
+                    suavidad y elegancia. El sello Red Vest.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Momentos (Atmósfera) -->
+    <section class="bg-white py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl text-center mb-16">Creamos la atmósfera perfecta</h2>
+            <div class="grid md:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-2xl">
+                <div class="bg-gray-100 h-80 md:h-auto">
+                    <img src="../assets/piano.jpg"
+                        alt="Detalle instrumento" class="w-full h-full object-cover">
+                </div>
+                <div class="bg-[#FDFDFD] p-12 flex flex-col justify-center">
+                    <div class="mb-8">
+                        <h4 class="text-sm uppercase tracking-widest text-red-700 font-bold mb-2">El Cóctel</h4>
+                        <p class="serif text-2xl italic mb-4">"El hilo conductor perfecto para la bienvenida."</p>
+                        <p class="text-gray-500 font-light">Música ambiental que permite la conversación, aportando una
+                            energía vibrante y sofisticada mientras vuestros invitados disfrutan del primer brindis.</p>
+                    </div>
+                    <div class="border-t border-gray-100 pt-8">
+                        <h4 class="text-sm uppercase tracking-widest text-red-700 font-bold mb-2">La Ceremonia</h4>
+                        <p class="serif text-2xl italic mb-4">"Emoción pura en formato acústico."</p>
+                        <p class="text-gray-500 font-light">Acompañamos los momentos clave con versiones personalizadas
+                            que harán de vuestro 'sí quiero' algo inolvidable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Especial Wedding Planners -->
+    <section id="tecnico" class="section-padding bg-stone-100">
+        <div class="max-w-4xl mx-auto glass-card p-10 md:p-16 rounded-3xl">
+            <h2 class="text-3xl mb-8 text-center italic serif">Espacio Wedding Planners</h2>
+            <p class="text-center text-gray-600 mb-12">Sabemos que la logística es clave. Red Vest está diseñado para
+                ser la solución más sencilla de vuestro timeline.</p>
+
+            <div class="grid md:grid-cols-2 gap-8 text-sm">
+                <ul class="space-y-4">
+                    <li class="flex items-center">
+                        <span class="text-red-700 mr-2">✔</span> Tiempo de montaje: 45 min.
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-red-700 mr-2">✔</span> Espacio requerido: 2x2 metros.
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-red-700 mr-2">✔</span> Autonomía total de sonido.
+                    </li>
+                </ul>
+                <ul class="space-y-4">
+                    <li class="flex items-center">
+                        <span class="text-red-700 mr-2">✔</span> Estética de cableado oculta.
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-red-700 mr-2">✔</span> Seguro de responsabilidad civil.
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-red-700 mr-2">✔</span> Disponibilidad de micro inalámbrico para brindis.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mt-12 text-center">
+                <!-- <button onclick="showModal()"
+                    class="border-2 border-red-700 text-red-700 px-8 py-3 rounded-full font-bold hover:bg-red-700 hover:text-white transition">
+                    Descargar Ficha Técnica (PDF)
+                </button> -->
+
+                <a href="https://drive.google.com/file/d/1NxsegBeAY9HDBRWSltsKeQIZeKyLDiVv/view?usp=drive_link"
+                    target="_blank"
+                    class="border-2 border-red-700 text-red-700 px-8 py-3 rounded-full font-bold hover:bg-red-700 hover:text-white transition">
+                    Descargar Ficha Técnica (PDF)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contacto -->
+    <footer id="contacto" class="bg-zinc-900 text-white section-padding text-center">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-4xl mb-6 serif">¿Hablamos de vuestra boda?</h2>
+            <p class="text-gray-400 mb-10 font-light">Estamos reservando fechas para la próxima temporada. Contactad con
+                nosotros para recibir un presupuesto personalizado y comprobar disponibilidad.</p>
+            <form class=" hidden" aria-hidden="true">
+                <input type="text" placeholder="Vuestro nombre"
+                    class="w-full p-4 rounded-lg bg-zinc-800 border border-zinc-700 focus:outline-none focus:border-red-500">
+                <input type="email" placeholder="Email de contacto"
+                    class="w-full p-4 rounded-lg bg-zinc-800 border border-zinc-700 focus:outline-none focus:border-red-500">
+                <textarea placeholder="Contadnos un poco sobre vuestro día..."
+                    class="w-full p-4 rounded-lg bg-zinc-800 border border-zinc-700 h-32 focus:outline-none focus:border-red-500"></textarea>
+                <button type="submit" class="btn-primary w-full py-4 rounded-lg font-bold text-lg">Enviar
+                    Solicitud</button>
+            </form>
+
+			<div class="py-12 text-center">
+				<p class="font-light text-lg leading-relaxed opacity-70">Contacta con <a href="mailto:booking@redvestmusic.com" class="text-burgundy font-medium underline underline-offset-4">booking@redvestmusic.com</a></p>
+			</div>
+
+            <div class="mt-16 pt-8 border-t border-zinc-800 text-xs text-gray-500 tracking-widest uppercase">
+                &copy; 2026 Red Vest Music | Sastrería Musical para Eventos Exclusivos
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Simple para el PDF (Simulación) -->
+    <div id="modal" class="fixed inset-0 bg-black/50 hidden z-[100] flex items-center justify-center p-4">
+        <div class="bg-white p-8 rounded-2xl max-w-sm w-full text-center">
+            <h3 class="text-xl mb-4 font-bold">Dossier Enviado</h3>
+            <p class="text-gray-600 mb-6">Hemos enviado el PDF técnico a vuestro correo electrónico. ¡Gracias!</p>
+            <button onclick="hideModal()" class="bg-gray-200 px-6 py-2 rounded-full font-bold">Cerrar</button>
+        </div>
+    </div>
+
+    <script>
+        function showModal() {
+            document.getElementById('modal').classList.remove('hidden');
+        }
+        function hideModal() {
+            document.getElementById('modal').classList.add('hidden');
+        }
+    </script>
+</body>
+
+</html>
