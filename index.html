@@ -14,6 +14,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="assets/favicon.png" type="image/png">
+	<link rel="apple-touch-icon" href="assets/favicon.png">
 </head>
 
 <body>
@@ -962,24 +964,32 @@
     <!-- SECCIÓN: MULTIMEDIA -->
     <section class="py-32 px-4 reveal">
         <div class="max-w-6xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div
-                    class="aspect-video bg-[#222] border border-white/5 flex items-center justify-center relative group overflow-hidden">
-                    <div class="absolute inset-0 bg-burgundy opacity-0 group-hover:opacity-10 transition-opacity"></div>
-                    <i
-                        class="fa-brands fa-youtube text-4xl opacity-20 group-hover:opacity-100 group-hover:text-burgundy transition-all duration-500"></i>
-                    <span class="absolute bottom-6 left-6 text-[9px] tracking-[0.4em] uppercase opacity-30">Escuchar
-                        Soul Selection</span>
-                </div>
-                <div
-                    class="aspect-video bg-[#222] border border-white/5 flex items-center justify-center relative group overflow-hidden">
-                    <div class="absolute inset-0 bg-burgundy opacity-0 group-hover:opacity-10 transition-opacity"></div>
-                    <i
-                        class="fa-brands fa-youtube text-4xl opacity-20 group-hover:opacity-100 group-hover:text-burgundy transition-all duration-500"></i>
-                    <span class="absolute bottom-6 left-6 text-[9px] tracking-[0.4em] uppercase opacity-30">Escuchar
-                        Jazz Session</span>
-                </div>
-            </div>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+				<a href="https://www.youtube.com/shorts/up-7sq2DEos" target="_blank" rel="noopener noreferrer" class="block">
+					<div
+						class="aspect-video bg-[#222] border border-white/5 flex items-center justify-center relative group overflow-hidden">
+						<img src="assets/yt-cartagenera.png" alt="Soul Selection preview"
+							class="absolute inset-0 w-full h-full object-cover object-top">
+						<div class="absolute inset-0 bg-burgundy opacity-0 group-hover:opacity-10 transition-opacity"></div>
+						<i
+							class="fa-brands fa-youtube text-4xl opacity-20 group-hover:opacity-100 group-hover:text-burgundy transition-all duration-500 z-10"></i>
+						<span class="absolute bottom-6 left-6 text-[9px] tracking-[0.4em] uppercase z-10">Escuchar
+							Cartagenera - Red Vest</span>
+					</div>
+				</a>
+				<a href="https://www.youtube.com/shorts/muEIxEcZerE" target="_blank" rel="noopener noreferrer" class="block">
+					<div
+						class="aspect-video bg-[#222] border border-white/5 flex items-center justify-center relative group overflow-hidden">
+						<img src="assets/yt-yeye.png" alt="Jazz Session preview"
+							class="absolute inset-0 w-full h-full object-cover object-top">
+						<div class="absolute inset-0 bg-burgundy opacity-0 group-hover:opacity-10 transition-opacity"></div>
+						<i
+							class="fa-brands fa-youtube text-4xl opacity-20 group-hover:opacity-100 group-hover:text-burgundy transition-all duration-500 z-10"></i>
+						<span class="absolute bottom-6 left-6 text-[9px] tracking-[0.4em] uppercase z-10">Escuchar
+							Chica Yeyé - Red Vest</span>
+					</div>
+				</a>
+			</div>
         </div>
     </section>
 
@@ -991,7 +1001,7 @@
                 <span class="italic font-light">Sastrería</span>
             </h2>
 
-            <form class="space-y-12 text-left">
+			<form class="space-y-12 text-left hidden" aria-hidden="true">
                 <div class="grid md:grid-cols-2 gap-12">
                     <div class="relative">
                         <input type="text"
@@ -1012,12 +1022,16 @@
                 <div class="relative text-center pt-8">
                     <button type="submit" class="btn-luxury w-full md:w-auto">Enviar Solicitud</button>
                 </div>
-            </form>
+			</form>
 
-            <div class="mt-32 opacity-30 text-[9px] tracking-[0.6em] uppercase flex justify-center space-x-12">
-                <a href="#" class="hover:text-burgundy transition-colors">Instagram</a>
-                <a href="#" class="hover:text-burgundy transition-colors">Youtube</a>
-                <a href="#" class="hover:text-burgundy transition-colors">Spotify</a>
+			<div class="py-12 text-center">
+				<p class="font-light text-lg leading-relaxed opacity-70">Contacta con <a href="mailto:booking@redvestmusic.com" class="text-burgundy font-medium underline underline-offset-4">booking@redvestmusic.com</a></p>
+			</div>
+
+			<div class="mt-32 opacity-30 text-[9px] tracking-[0.6em] uppercase flex justify-center space-x-12">
+                <a href="https://www.instagram.com/redvestmusic" class="hover:text-burgundy transition-colors">Instagram</a>
+                <a href="https://www.youtube.com/@RedVestmusic" class="hover:text-burgundy transition-colors">Youtube</a>
+                <!-- <a href="#" class="hover:text-burgundy transition-colors">Spotify</a> -->
             </div>
         </div>
     </section>
