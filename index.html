@@ -21,8 +21,19 @@
     <link rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="styles.css"></noscript>
 
-	<!-- Preload important open-graph / hero image to improve LCP -->
-	<link rel="preload" as="image" href="https://redvestmusic.com/assets/RV_Stacked_Logo_bg_Negative.png">
+	<!-- Preload important hero image to improve LCP -->
+	<link rel="preload" as="image" href="https://redvestmusic.com/assets/main_photo.webp">
+
+	<!-- Critical CSS (inline) for nav + hero to reduce render-blocking -->
+	<style>
+	  /* Critical: basic nav layout */
+	  #main-nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:2.5rem 2rem;background:transparent}
+	  /* Hero viewport sizing and centering */
+	  #inicio{position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 1rem;overflow:hidden}
+	  /* Hero image container basic rules */
+	  .aspect-[3/4]{position:relative;width:100%;padding-bottom:133.3333%}
+	  .aspect-[3/4] img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+	</style>
 	<!-- Preload main script to fetch earlier without blocking -->
 	<link rel="preload" href="/script.js" as="script">
 	<link rel="icon" href="assets/favicon.png" type="image/png">
