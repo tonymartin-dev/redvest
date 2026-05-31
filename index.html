@@ -465,10 +465,10 @@
             </svg>
         </div>
         <div class="hidden md:flex space-x-12 text-[10px] tracking-[0.5em] uppercase font-light">
-            <a href="#inicio" class="hover:text-burgundy transition-colors">Inicio</a>
-            <a href="#historia" class="hover:text-burgundy transition-colors">El Dúo</a>
-            <a href="#formatos" class="hover:text-burgundy transition-colors">Formatos</a>
-            <a href="#contacto" class="text-burgundy font-medium underline underline-offset-8 decoration-1">Booking</a>
+            <a href="#inicio" class="nav-link">Inicio</a>
+            <a href="#historia" class="nav-link">El Dúo</a>
+            <a href="#formatos" class="nav-link">Formatos</a>
+            <a href="#contacto" class="text-burgundy font-medium underline underline-offset-8 decoration-1 booking-link">Booking</a>
         </div>
     </nav>
 
@@ -1000,7 +1000,7 @@
 
         <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
             <!-- Formato 1 -->
-            <div class="glass-card p-12 text-center group hover:border-burgundy/40 transition-all duration-500">
+            <div class="glass-card formato-bounce p-12 text-center group">
                 <div class="text-burgundy text-4xl mb-8 opacity-50 group-hover:opacity-100 transition-opacity">
                     <i class="fa-solid fa-martini-glass-citrus"></i>
                 </div>
@@ -1020,7 +1020,7 @@
                 <span class="text-[9px] tracking-[0.4em] uppercase text-burgundy">Presente / Emocional</span>
             </div>
             <!-- Formato 3 -->
-            <div class="glass-card p-12 text-center group hover:border-burgundy/40 transition-all duration-500">
+            <div class="glass-card formato-bounce p-12 text-center group">
                 <div class="text-burgundy text-4xl mb-8 opacity-50 group-hover:opacity-100 transition-opacity">
                     <i class="fa-solid fa-crown"></i>
                 </div>
@@ -1035,35 +1035,44 @@
     <!-- SECCIÓN: MULTIMEDIA -->
     <section class="py-32 px-4 reveal">
         <div class="max-w-6xl mx-auto">
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-				<a href="https://www.youtube.com/shorts/up-7sq2DEos" target="_blank" rel="noopener noreferrer" class="block">
+			<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+				<a href="https://www.youtube.com/watch?v=bHL8_QDHadM" target="_blank" rel="noopener noreferrer" class="block">
 					<div
-						class="aspect-video bg-[#222] border border-white/5 flex items-center justify-center relative group overflow-hidden">
+						class="aspect-video bg-[#222] border border-white/5 flex items-center justify-center relative group overflow-hidden yt-frame">
 						<picture>
-							<source type="image/webp" srcset="assets/yt-cartagenera-200.webp 200w, assets/yt-cartagenera-400.webp 400w" sizes="(max-width:768px) 100vw, 50vw">
-							<img src="assets/yt-cartagenera.png" alt="Soul Selection preview"
-								class="absolute inset-0 w-full h-full object-cover object-top" loading="lazy" width="400" height="282" decoding="async">
+							<source type="image/webp" srcset="assets/yt-fly-200.webp 200w, assets/yt-fly-400.webp 400w" sizes="(max-width:640px) 100vw, 33vw">
+							<img src="assets/yt-fly-400.webp" alt="Fly - Red Vest"
+								class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="400" decoding="async">
 						</picture>
 						<div class="absolute inset-0 bg-burgundy opacity-0 group-hover:opacity-10 transition-opacity"></div>
 						<i
 							class="fa-brands fa-youtube text-4xl opacity-20 group-hover:opacity-100 group-hover:text-burgundy transition-all duration-500 z-10"></i>
-						<span class="absolute bottom-6 left-6 text-[9px] tracking-[0.4em] uppercase z-10">Escuchar
-							Cartagenera - Red Vest</span>
 					</div>
 				</a>
-				<a href="https://www.youtube.com/shorts/muEIxEcZerE" target="_blank" rel="noopener noreferrer" class="block">
+				<a href="https://www.youtube.com/watch?v=3yUndyYxe5s" target="_blank" rel="noopener noreferrer" class="block">
 					<div
-						class="aspect-video bg-[#222] border border-white/5 flex items-center justify-center relative group overflow-hidden">
+						class="aspect-video bg-[#222] border border-white/5 flex items-center justify-center relative group overflow-hidden yt-frame">
 						<picture>
-							<source type="image/webp" srcset="assets/yt-yeye-200.webp 200w, assets/yt-yeye-397.webp 397w" sizes="(max-width:768px) 100vw, 50vw">
-							<img src="assets/yt-yeye.png" alt="Jazz Session preview"
-								class="absolute inset-0 w-full h-full object-cover object-top" loading="lazy" width="397" height="323" decoding="async">
+							<source type="image/webp" srcset="assets/yt-hit_the_road-200.webp 200w, assets/yt-hit_the_road-400.webp 400w" sizes="(max-width:640px) 100vw, 33vw">
+							<img src="assets/yt-hit_the_road-400.webp" alt="Hit the Road - Red Vest"
+								class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="400" decoding="async">
 						</picture>
 						<div class="absolute inset-0 bg-burgundy opacity-0 group-hover:opacity-10 transition-opacity"></div>
 						<i
 							class="fa-brands fa-youtube text-4xl opacity-20 group-hover:opacity-100 group-hover:text-burgundy transition-all duration-500 z-10"></i>
-						<span class="absolute bottom-6 left-6 text-[9px] tracking-[0.4em] uppercase z-10">Escuchar
-							Chica Yeyé - Red Vest</span>
+					</div>
+				</a>
+				<a href="https://www.youtube.com/watch?v=v73Bj7pbpmw" target="_blank" rel="noopener noreferrer" class="block">
+					<div
+						class="aspect-video bg-[#222] border border-white/5 flex items-center justify-center relative group overflow-hidden yt-frame">
+						<picture>
+							<source type="image/webp" srcset="assets/yt-besame-200.webp 200w, assets/yt-besame-400.webp 400w" sizes="(max-width:640px) 100vw, 33vw">
+							<img src="assets/yt-besame-400.webp" alt="Bésame - Red Vest"
+								class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="400" decoding="async">
+						</picture>
+						<div class="absolute inset-0 bg-burgundy opacity-0 group-hover:opacity-10 transition-opacity"></div>
+						<i
+							class="fa-brands fa-youtube text-4xl opacity-20 group-hover:opacity-100 group-hover:text-burgundy transition-all duration-500 z-10"></i>
 					</div>
 				</a>
 			</div>
@@ -1102,13 +1111,19 @@
 			</form>
 
 			<div class="py-12 text-center">
-				<p class="font-light text-lg leading-relaxed opacity-70">Contacta con <a href="mailto:booking@redvestmusic.com" class="text-burgundy font-medium underline underline-offset-4">booking@redvestmusic.com</a></p>
+				<p class="font-light text-lg leading-relaxed opacity-70">Contacta con <a href="mailto:booking@redvestmusic.com" class="text-burgundy font-medium underline underline-offset-4 booking-link">booking@redvestmusic.com</a></p>
 			</div>
 
 			<div class="mt-32 opacity-30 text-[9px] tracking-[0.6em] uppercase flex justify-center space-x-12">
-                <a href="https://www.instagram.com/redvestmusic" class="hover:text-burgundy transition-colors">Instagram</a>
-                <a href="https://www.youtube.com/@RedVestmusic" class="hover:text-burgundy transition-colors">Youtube</a>
-                <!-- <a href="#" class="hover:text-burgundy transition-colors">Spotify</a> -->
+                <a href="https://www.instagram.com/redvestmusic" target="_blank" rel="noopener noreferrer" class="hover:text-burgundy transition hover:-translate-y-1 flex flex-col items-center gap-2">
+                    <i class="fa-brands fa-instagram text-2xl"></i>
+                    Instagram
+                </a>
+                <a href="https://www.youtube.com/@RedVestmusic" target="_blank" rel="noopener noreferrer" class="hover:text-burgundy transition hover:-translate-y-1 flex flex-col items-center gap-2">
+                    <i class="fa-brands fa-youtube text-2xl"></i>
+                    Youtube
+                </a>
+                <!-- <a href="#" class="hover:text-burgundy transition-colors flex flex-col items-center gap-2"><i class="fa-brands fa-spotify text-2xl"></i>Spotify</a> -->
             </div>
         </div>
     </section>

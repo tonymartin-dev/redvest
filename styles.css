@@ -53,6 +53,66 @@ body {
     50% { border-color: var(--burgundy); }
 }
 
+@keyframes yt-bounce {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-8px); }
+    55%  { transform: translateY(-2px); }
+    75%  { transform: translateY(-6px); }
+    90%  { transform: translateY(-1px); }
+    100% { transform: translateY(0); }
+}
+
+.yt-tile:hover {
+    animation: yt-bounce 0.55s ease-out;
+}
+
+.yt-frame {
+    transition: border-color 0.3s ease;
+}
+
+.yt-tile:hover .yt-frame {
+    border-color: rgba(109, 24, 33, 0.6);
+}
+
+/* Nav link: smooth underline from center */
+.nav-link {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 100%;
+    height: 1px;
+    background-color: var(--burgundy);
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.nav-link:hover {
+    color: var(--burgundy);
+}
+
+.nav-link:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+/* Booking link: glow effect on hover */
+.booking-link {
+    transition: text-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.booking-link:hover {
+    text-shadow: 0 0 20px rgba(232, 230, 225, 0.6);
+    filter: brightness(1.2);
+}
+
 /* Botón Luxury "Soft Touch" */
 .btn-luxury {
     position: relative;
@@ -91,6 +151,15 @@ body {
     background: rgba(255, 255, 255, 0.02);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: border-color 0.4s ease;
+}
+
+.glass-card:hover {
+    border-color: rgba(109, 24, 33, 0.5);
+}
+
+.formato-bounce:hover {
+    animation: yt-bounce 0.55s ease-out;
 }
 
 /* Smooth Reveal on Scroll */
