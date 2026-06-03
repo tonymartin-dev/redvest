@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://redvestmusic.com</loc>
-    <lastmod>2026-03-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://redvestmusic.com/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://redvestmusic.com/assets/main_photo.webp</image:loc>
+      <image:title>Red Vest — dúo de piano y voz</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://redvestmusic.com/bodas/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://redvestmusic.com/assets/main_photo.webp</image:loc>
+      <image:title>Música para bodas en directo — Red Vest</image:title>
+    </image:image>
   </url>
 </urlset>
