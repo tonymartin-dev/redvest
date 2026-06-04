@@ -1,405 +1,411 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es" data-palette="midnight" data-hero="centrado" data-duo="on" data-grain="off" data-metal="copper" data-theme-sync="on">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red Vest | Sastrería Musical | Jazz & Soul Live</title>
-	<meta name="description" content="Red Vest — Sastrería Musical. Piano y voz para eventos exclusivos: jazz & soul en directo. Booking: booking@redvestmusic.com">
-	<meta name="keywords" content="Red Vest, jazz, soul, piano y voz, música en vivo, booking, eventos exclusivos">
-	<meta name="robots" content="index,follow">
-	<link rel="canonical" href="https://redvestmusic.com">
-	<meta name="theme-color" content="#303030">
-    <!-- Framework & Fonts -->
-    <script src="https://cdn.tailwindcss.com"></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<!-- Load Google Fonts non-blocking: preload stylesheet then swap rel -->
-		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;300;500&display=swap" as="style" onload="this.rel='stylesheet'">
-		<noscript>
-			<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;300;500&display=swap" rel="stylesheet">
-		</noscript>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Vest · Música en directo para bodas y eventos en Madrid | Dúo Piano &amp; Voz</title>
+  <meta name="description" content="Dúo de piano y voz para bodas, hoteles de lujo y eventos exclusivos en Madrid y alrededores. Jazz, soul y boleros en directo — de los clásicos españoles a los grandes estándares internacionales. Booking: booking@redvestmusic.com">
+  <meta name="keywords" content="música para bodas Madrid, música en directo para bodas, dúo piano y voz Madrid, música para hoteles Madrid, música para eventos Madrid, jazz en vivo Madrid, soul en directo, cantante y pianista para bodas, música ceremonia civil Madrid, música cóctel evento, grupo de música para bodas Madrid, música ambiente para restaurantes, música para hoteles de lujo, música elegante en vivo, música para banquetes">
+  <meta name="author" content="Red Vest">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="language" content="Spanish">
+  <link rel="canonical" href="https://redvestmusic.com/">
+  <meta name="theme-color" content="#14110F">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-	<link rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'">
-	<noscript><link rel="stylesheet" href="styles.css"></noscript>
-	<!-- Preload important hero image to improve LCP -->
-	<link rel="preload" as="image" href="https://redvestmusic.com/assets/main_photo.webp">
-	<!-- Critical inline CSS -->
-	<style>
-		html,body{background:#1C1C1C;color:#E8E6E1;height:100%}
-		body{font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;margin:0}
-		.font-cinzel{font-family:Cinzel,serif}
-		#main-nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:2.5rem 2rem;background:transparent}
-		#inicio{position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 1rem;overflow:hidden}
-		.aspect-\[3\/4\]{position:relative;width:100%;padding-bottom:133.3333%}
-		.aspect-\[3\/4\] img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-	</style>
-	<link rel="icon" href="assets/favicon.png" type="image/png">
-	<link rel="apple-touch-icon" href="assets/favicon.png">
-		<!-- Open Graph / Social -->
-		<meta property="og:title" content="Red Vest | Sastrería Musical">
-		<meta property="og:description" content="Piano y voz para eventos exclusivos — Jazz & Soul en directo. Booking: booking@redvestmusic.com">
-		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://redvestmusic.com">
-		<meta property="og:image" content="https://redvestmusic.com/assets/RV_Stacked_Logo_bg_Negative.png">
-		<meta property="og:image:width" content="2008">
-		<meta property="og:image:height" content="1223">
-		<meta property="og:image:alt" content="Red Vest — logo apilado sobre fondo oscuro">
-		<meta property="og:locale" content="es_ES">
-		<meta property="og:site_name" content="Red Vest | Live Music">
-		<link rel="me" href="https://www.instagram.com/redvestmusic">
-		<link rel="me" href="https://www.youtube.com/@redvestmusic">
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Red Vest · Música en directo para bodas y eventos en Madrid">
+  <meta property="og:description" content="Dúo de piano y voz: jazz, soul y boleros en directo para bodas y eventos exclusivos en Madrid y alrededores.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://redvestmusic.com/">
+  <meta property="og:site_name" content="Red Vest">
+  <meta property="og:image" content="https://redvestmusic.com/assets/RV_Stacked_Logo_bg_Negative.png">
+  <meta property="og:image:width" content="2008">
+  <meta property="og:image:height" content="1223">
+  <meta property="og:image:alt" content="Red Vest — dúo de piano y voz para eventos">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Red Vest · Música en directo para bodas y eventos en Madrid">
+  <meta name="twitter:description" content="Dúo de piano y voz: jazz, soul y boleros en directo para bodas y eventos exclusivos en Madrid.">
+  <meta name="twitter:image" content="https://redvestmusic.com/assets/RV_Stacked_Logo_bg_Negative.png">
+  <link rel="me" href="https://www.instagram.com/redvestmusic">
+  <link rel="me" href="https://www.youtube.com/@redvestmusic">
 
-		<!-- Structured Data -->
-		<script type="application/ld+json">
-		{
-			"@context": "https://schema.org",
-			"@type": "MusicGroup",
-			"name": "Red Vest",
-			"url": "https://redvestmusic.com",
-			"logo": "https://redvestmusic.com/assets/favicon.png",
-			"description": "Red Vest — Piano y voz para eventos exclusivos: jazz & soul en directo. Booking: booking@redvestmusic.com",
-			"image": "https://redvestmusic.com/assets/RV_Stacked_Logo_bg_Negative.png",
-			"email": "booking@redvestmusic.com",
-			"contactPoint": [{
-				"@type": "ContactPoint",
-				"contactType": "booking",
-				"email": "booking@redvestmusic.com"
-			}],
-			"sameAs": [
-				"https://www.instagram.com/redvestmusic",
-				"https://www.youtube.com/@redvestmusic"
-			]
-		}
-		</script>
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MusicGroup",
+        "@id": "https://redvestmusic.com/#group",
+        "name": "Red Vest",
+        "alternateName": "Red Vest Music",
+        "url": "https://redvestmusic.com/",
+        "logo": "https://redvestmusic.com/assets/RV_Stacked_Logo_bg_Negative.png",
+        "image": "https://redvestmusic.com/assets/RV_Stacked_Logo_bg_Negative.png",
+        "description": "Dúo de piano y voz para bodas, hoteles de lujo y eventos exclusivos en Madrid y alrededores. Jazz, soul y boleros en directo, de los clásicos españoles a los grandes estándares internacionales.",
+        "email": "booking@redvestmusic.com",
+        "genre": ["Jazz", "Soul", "Bolero", "Música en directo"],
+        "areaServed": [
+          { "@type": "City", "name": "Madrid" },
+          { "@type": "AdministrativeArea", "name": "Comunidad de Madrid" }
+        ],
+        "address": { "@type": "PostalAddress", "addressLocality": "Madrid", "addressRegion": "Comunidad de Madrid", "addressCountry": "ES" },
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "contactType": "booking",
+          "email": "booking@redvestmusic.com",
+          "availableLanguage": ["es", "en"]
+        }],
+        "sameAs": [
+          "https://www.instagram.com/redvestmusic",
+          "https://www.youtube.com/@redvestmusic"
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://redvestmusic.com/#service",
+        "serviceType": "Música en directo para eventos",
+        "provider": { "@id": "https://redvestmusic.com/#group" },
+        "areaServed": [
+          { "@type": "City", "name": "Madrid" },
+          { "@type": "AdministrativeArea", "name": "Comunidad de Madrid" }
+        ],
+        "audience": { "@type": "Audience", "audienceType": "Bodas, hoteles de lujo, restaurantes y eventos privados" },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Formatos Red Vest",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cocktail Lounge", "description": "Música ambiental para recepciones y bienvenidas." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gala Dinner", "description": "La música como protagonista en cenas de etiqueta." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Private Elite", "description": "Repertorio a medida para eventos privados exclusivos." } }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://redvestmusic.com/#website",
+        "url": "https://redvestmusic.com/",
+        "name": "Red Vest",
+        "inLanguage": "es-ES",
+        "publisher": { "@id": "https://redvestmusic.com/#group" }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+
+  <!-- Apply tweak state before paint to avoid flash -->
+  <script>
+    var RV_TWEAKS = /*EDITMODE-BEGIN*/{
+      "palette": "midnight",
+      "hero": "centrado",
+      "duotone": "on",
+      "grain": "off",
+      "metal": "copper"
+    }/*EDITMODE-END*/;
+    (function (t) {
+      var r = document.documentElement;
+      r.dataset.palette = t.palette;
+      r.dataset.hero = t.hero;
+      r.dataset.duo = t.duotone;
+      r.dataset.grain = t.grain;
+      r.dataset.metal = t.metal;
+    })(RV_TWEAKS);
+  </script>
 </head>
 
 <body>
 
-    <!-- NAVEGACIÓN -->
-    <nav class="fixed w-full z-50 px-8 py-10 flex justify-between items-center bg-transparent transition-all duration-700"
-        id="main-nav">
-        <div class="font-cinzel text-xl tracking-[0.3em] uppercase group">
-            <img src="assets/RV_Linear_Logo_Negative.svg" height="35" width="105" alt="Red Vest">
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" id="nav" data-screen-label="Nav">
+    <a href="#inicio" class="nav__brand" aria-label="Red Vest — inicio">
+      <span class="nav__logo" data-logo-slot></span>
+    </a>
+    <button class="nav__toggle" id="navToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav__right">
+      <div class="nav__menu" id="navMenu">
+        <a href="#duo" class="nav__link">El Dúo</a>
+        <a href="#experiencias" class="nav__link">Experiencias</a>
+        <a href="#repertorio" class="nav__link">Vídeos</a>
+        <a href="bodas/index.html" class="nav__link">Bodas</a>
+        <a href="#booking" class="nav__link nav__link--book">Booking</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar entre modo claro y oscuro" title="Modo claro / oscuro">
+        <svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+        <svg class="ico-moon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.2A8 8 0 1 1 9.8 4 6.4 6.4 0 0 0 20 14.2z"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <header id="inicio" data-screen-label="Hero">
+    <div class="hero">
+      <div class="hero__copy">
+        <h1 class="sr-only">Red Vest — música en directo para bodas, hoteles y eventos exclusivos en Madrid y alrededores. Dúo de piano y voz: jazz, soul y boleros, de clásicos españoles a estándares internacionales.</h1>
+        <span class="eyebrow">Sastrería Musical</span>
+
+        <svg id="brandmark" class="hero__wordmark lm-logo" viewBox="-659.49 -219.82 2000.01 666.64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Red Vest">
+          <g>
+            <path fill="currentColor" d="M613.19,261.819c7.342,0,13.628-2.61,18.854-7.835c5.226-5.226,7.979-11.506,8.266-18.854V-2.135c0-6.778-2.69-12.5-8.054-17.16c-5.368-4.66-11.724-6.992-19.065-6.992h-5.082l-0.425-4.234h124.141c8.748,0,18.286-0.846,28.6-2.541c10.307-1.695,17.58-3.389,21.818-5.083v53.385h-4.238V7.612c0-6.781-2.329-12.563-6.986-17.371c-4.663-4.799-10.244-7.342-16.737-7.627h-86.433v130.917h71.605c5.645-0.278,10.445-2.393,14.402-6.355c3.952-3.952,5.932-8.895,5.932-14.827v-5.936h4.238v66.943h-4.238v-6.355c0-5.647-1.904-10.446-5.719-14.404c-3.814-3.953-8.547-6.071-14.196-6.354h-72.024v126.681h60.593c20.896,0,36.858-4.663,47.877-13.983c11.013-9.321,20.19-23.156,27.538-41.522h4.238l-24.578,68.641H607.683v-4.238H613.19z"></path>
+            <path fill="currentColor" d="M852.569,248.685c-0.849-3.955-1.268-11.575-1.268-22.881c0-11.296,2.116-23.302,6.355-36.012h3.809c-0.287,3.111-0.425,6.218-0.425,9.323c0,17.228,5.22,31.564,15.676,43.002c10.451,11.442,24.292,17.161,41.522,17.161c17.798,0,32.413-5.363,43.856-16.101c11.437-10.729,17.155-24.217,17.155-40.457c0-16.238-5.507-29.448-16.524-39.618L881.38,87.691c-15.252-14.123-22.875-31.208-22.875-51.267c0-20.052,6.705-37.211,20.121-51.479c13.416-14.258,31.564-21.394,54.445-21.394c10.731,0,22.88,1.416,36.439,4.235h16.52v52.113h-3.809c0-13.274-4.595-23.864-13.772-31.776c-9.183-7.903-20.97-11.862-35.378-11.862c-14.403,0-26.482,4.808-36.223,14.405c-9.744,9.606-14.62,21.605-14.62,36.013c0,14.408,5.649,26.839,16.949,37.286l83.462,77.109c14.122,12.996,21.183,30.79,21.183,53.384c0,22.602-7.198,41.172-21.601,55.718c-14.409,14.552-33.618,21.818-57.623,21.818c-12.435,0-25.633-1.909-39.617-5.718C871.003,262.456,860.198,256.594,852.569,248.685z"></path>
+            <path fill="currentColor" d="M1277.95,7.186c0-6.778-2.397-12.638-7.198-17.583c-4.813-4.938-10.463-7.55-16.95-7.838h-80.496v253.784c0.275,7.348,3.028,13.56,8.259,18.642c5.226,5.088,11.507,7.632,18.854,7.632h5.506v4.235h-92.782v-4.235h5.506c7.342,0,13.623-2.541,18.854-7.632c5.22-5.079,7.979-11.15,8.26-18.217V-18.238h-80.502c-6.779,0.288-12.498,2.899-17.162,7.838c-4.657,4.949-6.986,10.808-6.986,17.583v7.204l-4.238,0.424v-53.383c4.238,1.695,11.58,3.389,22.031,5.083s20.053,2.541,28.816,2.541h143.201c13.841,0,25.353-1.059,34.529-3.178c9.178-2.118,14.759-3.601,16.737-4.45v53.386l-4.233-0.424V7.186H1277.95z"></path>
+            <circle class="lm-vest" fill="var(--wine)" cx="446.842" cy="274.309" r="5.314"></circle>
+            <circle class="lm-vest" fill="var(--wine)" cx="450.029" cy="322.223" r="2.57"></circle>
+            <circle class="lm-vest" fill="var(--wine)" cx="446.842" cy="300.801" r="4.438"></circle>
+            <path class="lm-vest" id="Uve_2_" fill="var(--wine)" d="M313.196,0.945c-3.973-9.068-9.421-15.796-16.363-20.19c-6.952-4.394-13.965-6.59-21.045-6.59h-3.398v-4.251h95.645v4.251h-3.825c-8.507,0-14.173,3.971-17.007,11.903c-0.57,1.699-0.849,3.688-0.849,5.95c0,2.27,0.705,5.101,2.128,8.505l88.842,222.746L542.749-28.81c16.72-39.388,37.69-67.592,62.922-84.593c9.625-6.517,21.108-11.615,34.427-15.306c13.313-3.679,24.078-5.528,32.304-5.528c8.208,0,13.456,0,15.722,0v4.253c-13.318,0.569-25.788,3.186-37.397,7.861c-11.62,4.682-21.193,10.068-28.696,16.158c-7.508,6.097-14.81,14.173-21.888,24.228c-7.09,10.065-12.538,18.637-16.37,25.721c-3.826,7.086-8.291,16.152-13.388,27.206L453.671,225.833c-4.971,9.932-12.132,28.604-14.942,36.927c-7.835,23.253,5.61,63.484,5.61,65.041"></path>
+            <path fill="currentColor" d="M-178.751,351.648c-11.865,3.103-22.39,4.663-31.564,4.663c-9.18,0-17.306-0.574-24.36-1.698c-7.063-1.13-14.621-3.321-22.669-6.567c-8.05-3.249-15.609-6.992-22.667-11.222c-7.063-4.239-14.127-9.473-21.183-15.677c-12.994-10.459-24.786-21.756-35.378-33.901c-10.59-12.137-31-34.951-61.223-68.423c-30.228-33.468-50.278-55.715-60.164-66.73c-9.892-11.016-17.515-16.8-22.88-17.371v-4.237c16.378,0,27.33-0.35,32.836-1.057c5.506-0.703,11.367-1.973,17.582-3.814c6.209-1.832,11.439-4.303,15.676-7.413c16.664-10.73,24.998-28.524,24.998-53.384c0-20.616-4.593-37.138-13.768-49.569c-9.183-12.427-22.106-18.784-38.769-19.066h-52.537v252.52c0,7.061,2.607,13.275,7.838,18.642c5.224,5.369,11.649,8.048,19.277,8.048h5.083l0.426,4.238h-92.787v-4.238h5.506c7.058,0,13.274-2.541,18.643-7.629c5.361-5.082,8.19-11.297,8.475-18.645V13.973c-0.284-7.342-3.039-13.624-8.261-18.854c-5.229-5.223-11.512-7.839-18.854-7.839h-5.506v-4.237h114.395c24.851,0,44.838,6.99,59.951,20.974c15.107,13.982,22.666,32.486,22.666,55.501c0,23.025-6.924,42.792-20.759,59.317c-13.841,16.522-30.789,24.786-50.841,24.786h-0.426c9.6,10.167,20.476,22.031,32.624,35.591c48.862,53.951,80.214,87.844,94.059,101.682c13.835,13.841,26.058,25.209,36.647,34.108c10.593,8.896,19.978,15.467,28.174,19.696c16.664,9.04,33.189,13.56,49.572,13.56c3.39,0,6.778-0.286,10.168-0.849V351.648z"></path>
+            <path fill="currentColor" d="M-273.239,275.385c7.342,0,13.624-2.61,18.854-7.836c5.226-5.225,7.978-11.506,8.261-18.854V11.429c0-6.778-2.69-12.498-8.049-17.158c-5.369-4.661-11.724-6.991-19.066-6.991h-5.083l-0.423-4.237h124.139c8.751,0,18.284-0.849,28.599-2.54c10.308-1.695,17.582-3.39,21.819-5.083v53.383h-4.237v-7.63c0-6.777-2.329-12.563-6.989-17.371c-4.662-4.798-10.241-7.342-16.737-7.626h-86.432v130.918h71.604c5.647-0.277,10.446-2.398,14.404-6.355c3.953-3.953,5.932-8.899,5.932-14.832v-5.932h4.237v66.939h-4.237v-6.355c0-5.644-1.906-10.444-5.72-14.404c-3.813-3.951-8.546-6.069-14.193-6.354h-72.027v126.683h60.589c20.897,0,36.858-4.663,47.874-13.984c11.016-9.32,20.19-23.155,27.538-41.521h4.238l-24.575,68.641h-175.829v-4.238h5.509V275.385z"></path>
+            <path fill="currentColor" d="M215.059,23.929c28.103,27.261,42.154,63.063,42.154,107.401c0,44.349-14.052,80.151-42.154,107.405c-28.107,27.257-64.757,40.888-109.945,40.888h-143.63v-4.238h5.507c7.342,0,13.622-2.61,18.854-7.836c5.224-5.225,7.976-11.506,8.261-18.854V11.429c0-6.778-2.754-12.498-8.261-17.158c-5.506-4.661-11.797-6.991-18.854-6.991h-5.085l-0.422-4.237h143.63C150.302-16.958,186.952-3.328,215.059,23.929z M21.649-4.247v271.159h83.465c23.726,0,44.697-5.649,62.917-16.949c18.218-11.293,32.338-27.182,42.368-47.664c10.023-20.478,15.042-44.126,15.042-70.965c0-40.675-11.089-73.437-33.259-98.297C170.004,8.187,140.984-4.247,105.117-4.247H21.649z"></path>
+          </g>
+        </svg>
+
+        <p class="lede">Piano y voz que visten cada velada a medida. Jazz y soul en directo para bodas, hoteles de lujo, restaurantes de autor y rooftops con vistas en Madrid y alrededores.</p>
+
+        <div class="hero__actions">
+          <a href="#booking" class="btn btn-wine">Solicitar dossier</a>
+          <a href="#experiencias" class="btn">Ver experiencias</a>
         </div>
-        <div class="hidden md:flex space-x-12 text-[10px] tracking-[0.5em] uppercase font-light">
-            <a href="#inicio" class="nav-link">Inicio</a>
-            <a href="#historia" class="nav-link">El Dúo</a>
-            <a href="#formatos" class="nav-link">Formatos</a>
-            <a href="#contacto" class="text-burgundy font-medium underline underline-offset-8 decoration-1 booking-link">Booking</a>
+      </div>
+
+      <div class="hero__media">
+        <div class="photo photo--center grain">
+          <picture>
+            <source type="image/webp" srcset="assets/hero_home-480.webp 480w, assets/hero_home-768.webp 768w, assets/hero_home-896.webp 896w" sizes="100vw">
+            <img src="assets/hero_home.webp" alt="Red Vest — piano y voz en directo" width="1920" height="1280" fetchpriority="high" decoding="async">
+          </picture>
         </div>
-    </nav>
+      </div>
 
-    <!-- HERO SECTION -->
-    <section id="inicio"
-        class="relative h-screen flex flex-col justify-center items-center text-center px-4 overflow-hidden">
-        <!-- Background Decor -->
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(114,16,33,0.05)_0%,transparent_70%)]">
+      <div class="hero__scroll">
+        <span>Scroll</span>
+        <span class="line"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== SEAM TAGLINE ===================== -->
+  <div class="section" style="padding-block: clamp(3rem,7vh,5rem)">
+    <div class="wrap">
+      <div class="tagline-row reveal">
+        <span class="seam-h"></span>
+        <p class="tagline">Piano &amp; Voz <span class="dot">·</span> Jazz &amp; Soul <span class="dot">·</span> Bodas &amp; Eventos</p>
+        <span class="seam-h"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== EL DÚO ===================== -->
+  <section id="duo" class="section" data-screen-label="El Dúo">
+    <div class="wrap">
+      <div class="duo">
+        <div class="duo__copy">
+          <span class="eyebrow reveal">Música a medida</span>
+          <h2 class="display duo__title reveal d1">La elegancia,<br><em>tomada a medida</em></h2>
+          <span class="seam-h reveal d1" style="max-width:5rem"></span>
+          <p class="lede reveal d2">Red Vest nace para devolver la exclusividad a la música en vivo. No somos un acompañamiento más: somos la costura invisible que une el lujo visual con la calidez del jazz y el soul clásico.</p>
+          <p class="lede reveal d2">Una formación de piano y voz que reinterpreta los grandes estándares —de los clásicos españoles a la era dorada de Broadway, del bolero a los matices del blues— siempre bajo una estética de gala impecable.</p>
+          <div class="signature reveal d3">
+            <div class="item"><div class="k serif">Jazz</div><div class="v">&amp; Soul clásico</div></div>
+            <div class="item"><div class="k serif">Piano</div><div class="v">&amp; Voz en directo</div></div>
+            <div class="item"><div class="k serif">ES · EN</div><div class="v">Repertorio bilingüe</div></div>
+          </div>
         </div>
-
-        <div class="mb-12 transition-transform duration-1000 hover:scale-105">
-            <!-- Stacked logo -->
-            <img src="assets/RV_Stacked_Logo_Negative.svg" class="max-w-sm" alt="Red Vest" width="557" height="340">
-			<h1 class="font-cinzel text-3xl md:text-5xl tracking-widest mt-6 sr-only">Red Vest — Piano y voz para eventos • Jazz & Soul</h1>
+        <div class="duo__media reveal d1">
+          <div class="photo photo--top duo__photo ticked photo--bw">
+            <picture>
+              <source type="image/webp" srcset="assets/main_photo-480.webp 480w, assets/main_photo-768.webp 768w, assets/main_photo-896.webp 896w" sizes="(max-width:900px) 100vw, 46vw">
+              <img src="assets/main_photo-896.webp" alt="Red Vest al piano" width="896" height="1184" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="duo__badge">
+            <span class="big" aria-hidden="true">
+              <img class="duo__badge-icon duo__badge-icon--negative" src="assets/RV_Jewel_Symbol_Negative.svg" alt="" width="48" height="48">
+              <img class="duo__badge-icon duo__badge-icon--positive" src="assets/RV_Jewel_Symbol_Positive.svg" alt="" width="48" height="48">
+            </span>
+            <span class="small">Sastrería Musical</span>
+          </div>
         </div>
-        <div class="inline-block">
-            <p class="font-light text-xs md:text-sm tracking-[0.8em] uppercase opacity-40 mb-16 text-shadow">
-                <span>Sastrería Musical</span>
-                <span> • </span>
-                <span>Live Jazz & Soul</span>
-            </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCIAS ===================== -->
+  <section id="experiencias" class="section exp" data-screen-label="Experiencias">
+    <div class="wrap">
+      <div class="exp__head">
+        <div>
+          <span class="eyebrow reveal">Formatos</span>
+          <h2 class="display exp__title reveal d1" style="margin-top:1.2rem">Tres maneras de<br>vestir su evento</h2>
         </div>
+        <p class="lede reveal d2" style="max-width:34ch">Cada formato es un patrón distinto. Lo ajustamos al tejido de su velada: del susurro de fondo al protagonismo absoluto.</p>
+      </div>
 
-        <div class="flex flex-col md:flex-row gap-6">
-            <a href="#contacto" class="btn-luxury">Solicitar Dossier</a>
-            <a href="#formatos"
-                class="px-12 py-5 text-[10px] uppercase tracking-[0.4em] opacity-40 hover:opacity-100 transition-opacity">Ver
-                Formatos</a>
+      <div class="formats reveal d1">
+        <div class="formats__nav" id="fmtNav">
+          <button class="fmt-tab active" data-i="0"><span class="fmt-tab__bar"></span><span class="fmt-tab__n">01</span><span class="fmt-tab__name">Cocktail Lounge</span></button>
+          <button class="fmt-tab" data-i="1"><span class="fmt-tab__bar"></span><span class="fmt-tab__n">02</span><span class="fmt-tab__name">Gala Dinner</span></button>
+          <button class="fmt-tab" data-i="2"><span class="fmt-tab__bar"></span><span class="fmt-tab__n">03</span><span class="fmt-tab__name">Private Elite</span></button>
         </div>
-
-        <div class="absolute bottom-12 animate-bounce opacity-20">
-            <i class="fa-solid fa-chevron-down"></i>
+        <div class="formats__stage" id="fmtStage">
+          <span class="fmt-ghost" id="fmtGhost">01</span>
+          <div class="fmt-body" id="fmtBody">
+            <span class="eyebrow" id="fmtKicker">Formato 01</span>
+            <h3 class="fmt-name" id="fmtName">Cocktail Lounge</h3>
+            <p class="fmt-desc" id="fmtDesc">Atmósfera sutil. El fondo perfecto para recepciones de gala y bienvenidas corporativas, donde la música acaricia sin interrumpir la conversación.</p>
+            <span class="fmt-tag" id="fmtTag">Íntimo · Ambiente</span>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <div class="editorial-line"></div>
-
-    <!-- SECCIÓN: EL DÚO (EDITORIAL) -->
-    <section id="historia" class="py-32 md:py-48 px-8 reveal">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
-            <div class="space-y-12">
-                <span class="text-burgundy text-[10px] tracking-[0.6em] uppercase">Música a medida</span>
-                <h2 class="font-cinzel text-3xl md:text-5xl leading-tight">La elegancia es <br><span
-                        class="italic text-burgundy font-light">nuestra partitura</span></h2>
-                <div class="h-px w-24 bg-burgundy"></div>
-                <p class="font-light text-lg leading-relaxed opacity-70">
-                    Red Vest nace de la necesidad de devolver la exclusividad a la música en vivo. No somos solo un
-                    acompañamiento; somos la costura invisible que une el lujo visual con la calidez del Jazz y el Soul
-                    clásico.
-                </p>
-                <p class="font-light text-lg leading-relaxed opacity-70">
-                    Nuestra formación de piano y voz reinterpreta los grandes estándares internacionales, desde la era
-                    dorada de Broadway hasta los matices modernos del blues, siempre bajo una estética de gala
-                    impecable.
-                </p>
-            </div>
-            <div class="relative group">
-				<div class="aspect-[3/4] bg-[#252525] border border-white/5 overflow-hidden relative">
-					<picture>
-						<source type="image/webp" 
-							srcset="assets/main_photo-480.webp 480w, assets/main_photo-768.webp 768w, assets/main_photo-896.webp 896w"
-							sizes="(max-width:768px) 100vw, 50vw">
-						<img src="assets/main_photo.webp"
-							alt="Musical Atmosphere"
-							class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-1000" 
-							width="896" height="1184" fetchpriority="high" decoding="async">
-					</picture>
-                    <div class="absolute inset-0 border-[20px] border-charcoal/50"></div>
-                </div>
-                <div
-                    class="absolute -bottom-10 -left-10 w-40 h-40 bg-burgundy/10 -z-10 transition-transform group-hover:translate-x-4">
-                </div>
-            </div>
+  <!-- ===================== VÍDEOS (SESIONES + DIRECTOS) ===================== -->
+  <section id="repertorio" class="section" data-screen-label="Vídeos">
+    <div class="wrap">
+      <div class="exp__head" style="margin-bottom:2.6rem">
+        <div>
+          <span class="eyebrow reveal">Sesiones &amp; directos</span>
+          <h2 class="display exp__title reveal d1" style="margin-top:1.2rem">Escúchenos<br>tocar</h2>
         </div>
-    </section>
+        <a href="https://www.youtube.com/@redvestmusic" target="_blank" rel="noopener" class="btn-ghost reveal d2" style="align-self:flex-end">Ver canal completo <span class="arrow">→</span></a>
+      </div>
 
-    <!-- SECCIÓN: FORMATOS (TILES) -->
-    <section id="formatos" class="py-32 bg-[#2a2a2a] px-8 reveal">
-        <div class="max-w-6xl mx-auto text-center mb-24">
-            <h2 class="font-cinzel text-3xl tracking-[0.3em] uppercase mb-4">Experiencias</h2>
-            <p class="text-[10px] tracking-[0.5em] uppercase opacity-40 italic">Diseñadas para entornos selectos</p>
+      <div class="media__grid">
+        <a class="vid reveal" href="https://www.youtube.com/watch?v=bHL8_QDHadM" target="_blank" rel="noopener">
+          <img src="assets/yt-fly-400.webp" alt="Fly Me To The Moon — Red Vest" loading="lazy" decoding="async">
+          <div class="vid__overlay">
+            <span class="vid__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3l16 9-16 9z"/></svg></span>
+            <span class="vid__label">Fly Me To The Moon<span>Jazz standard · Sesión</span></span>
+          </div>
+        </a>
+        <a class="vid reveal d1" href="https://www.youtube.com/watch?v=3yUndyYxe5s" target="_blank" rel="noopener">
+          <img src="assets/yt-hit_the_road-400.webp" alt="Hit The Road Jack — Red Vest" loading="lazy" decoding="async">
+          <div class="vid__overlay">
+            <span class="vid__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3l16 9-16 9z"/></svg></span>
+            <span class="vid__label">Hit The Road Jack<span>Soul clásico · Sesión</span></span>
+          </div>
+        </a>
+        <a class="vid reveal d2" href="https://www.youtube.com/watch?v=v73Bj7pbpmw" target="_blank" rel="noopener">
+          <img src="assets/yt-besame-400.webp" alt="Bésame Mucho — Red Vest" loading="lazy" decoding="async">
+          <div class="vid__overlay">
+            <span class="vid__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3l16 9-16 9z"/></svg></span>
+            <span class="vid__label">Bésame Mucho<span>Bolero · Sesión</span></span>
+          </div>
+        </a>
+        <a class="vid reveal" href="https://www.youtube.com/watch?v=juX0-DUq-DI" target="_blank" rel="noopener">
+          <img src="assets/yt-dream-400.webp" alt="Dream a Little Dream of Me — Red Vest" loading="lazy" decoding="async">
+          <div class="vid__overlay">
+            <span class="vid__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3l16 9-16 9z"/></svg></span>
+            <span class="vid__label">Dream a Little Dream of Me<span>Jazz standard · En directo</span></span>
+          </div>
+        </a>
+        <a class="vid reveal d1" href="https://www.youtube.com/watch?v=Lhr_Wz1Da14" target="_blank" rel="noopener">
+          <img src="assets/yt-la_flaca-400.webp" alt="La Flaca — Red Vest" loading="lazy" decoding="async">
+          <div class="vid__overlay">
+            <span class="vid__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3l16 9-16 9z"/></svg></span>
+            <span class="vid__label">La Flaca<span>Pop español · En directo</span></span>
+          </div>
+        </a>
+        <a class="vid reveal d2" href="https://www.youtube.com/watch?v=MFTEsU4Vvks" target="_blank" rel="noopener">
+          <img src="assets/yt-feeling-400.webp" alt="Feeling Good — Red Vest" loading="lazy" decoding="async">
+          <div class="vid__overlay">
+            <span class="vid__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3l16 9-16 9z"/></svg></span>
+            <span class="vid__label">Feeling Good<span>Soul · En directo</span></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BOOKING ===================== -->
+  <section id="booking" class="section booking grain-fixed" data-screen-label="Booking">
+    <div class="wrap-tight">
+      <span class="eyebrow center reveal" style="justify-content:center">Disponibilidad</span>
+      <h2 class="display booking__title reveal d1" style="margin-top:1.8rem">Reserve su fecha<br>en la <em>Sastrería</em></h2>
+      <p class="lede reveal d2" style="margin:2rem auto 3rem; text-align:center">Estamos confirmando agenda para la próxima temporada. Escríbanos y le enviaremos el dossier con repertorio, formatos y condiciones.</p>
+      <div class="reveal d2">
+        <a href="mailto:booking@redvestmusic.com" class="booking__mail">booking@redvestmusic.com</a>
+      </div>
+
+      <div class="social reveal d3">
+        <a href="https://www.instagram.com/redvestmusic" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.9" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+        <a href="https://www.youtube.com/@redvestmusic" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.2 9.2l5 2.8-5 2.8z" fill="currentColor" stroke="none"/></svg>
+          YouTube
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="foot">
+    <p>© 2026 Red Vest Music — La elegancia es nuestra partitura</p>
+  </footer>
+
+  <!-- ===================== TWEAKS PANEL ===================== -->
+  <aside class="tw" id="twPanel" hidden aria-label="Tweaks">
+    <div class="tw__head">
+      <span class="tw__title">Tweaks</span>
+      <button class="tw__close" id="twClose" aria-label="Cerrar">✕</button>
+    </div>
+    <div class="tw__body">
+      <div class="tw__group">
+        <span class="tw__label">Paleta</span>
+        <div class="tw__seg" data-tw="palette">
+          <button data-val="midnight">Medianoche</button>
+          <button data-val="claro">Atelier Claro</button>
+          <button data-val="cobre">Vino &amp; Cobre</button>
         </div>
-
-        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
-            <!-- Formato 1 -->
-            <div class="glass-card formato-bounce p-12 text-center group">
-                <div class="text-burgundy text-4xl mb-8 opacity-50 group-hover:opacity-100 transition-opacity">
-                    <i class="fa-solid fa-martini-glass-citrus"></i>
-                </div>
-                <h3 class="font-cinzel text-xl mb-6 tracking-widest">Cocktail Lounge</h3>
-                <p class="font-light text-sm leading-relaxed opacity-50 mb-8">Atmósfera sutil. El fondo perfecto para
-                    recepciones de gala y bienvenidas corporativas.</p>
-                <span class="text-[9px] tracking-[0.4em] uppercase text-burgundy">Background / Intimo</span>
-            </div>
-            <!-- Formato 2 -->
-            <div class="glass-card p-12 text-center group border-burgundy/20 bg-burgundy/5 transform md:-translate-y-4">
-                <div class="text-burgundy text-4xl mb-8">
-                    <i class="fa-solid fa-utensils"></i>
-                </div>
-                <h3 class="font-cinzel text-xl mb-6 tracking-widest">Gala Dinner</h3>
-                <p class="font-light text-sm leading-relaxed opacity-80 mb-8">La música como protagonista. Un viaje
-                    emocional a través de los grandes clásicos del Soul.</p>
-                <span class="text-[9px] tracking-[0.4em] uppercase text-burgundy">Presente / Emocional</span>
-            </div>
-            <!-- Formato 3 -->
-            <div class="glass-card formato-bounce p-12 text-center group">
-                <div class="text-burgundy text-4xl mb-8 opacity-50 group-hover:opacity-100 transition-opacity">
-                    <i class="fa-solid fa-crown"></i>
-                </div>
-                <h3 class="font-cinzel text-xl mb-6 tracking-widest">Private Elite</h3>
-                <p class="font-light text-sm leading-relaxed opacity-50 mb-8">Curaduría total. Selección de repertorio a
-                    medida para residencias y eventos privados.</p>
-                <span class="text-[9px] tracking-[0.4em] uppercase text-burgundy">Custom / Exclusivo</span>
-            </div>
+      </div>
+      <div class="tw__group">
+        <span class="tw__label">Hero</span>
+        <div class="tw__seg" data-tw="hero">
+          <button data-val="editorial">Editorial</button>
+          <button data-val="centrado">Centrado</button>
+          <button data-val="portico">Pórtico</button>
         </div>
-    </section>
-
-    <!-- SECCIÓN: MULTIMEDIA -->
-    <section class="py-32 px-4 reveal">
-        <div class="max-w-6xl mx-auto">
-			<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-				<a href="https://www.youtube.com/watch?v=bHL8_QDHadM" target="_blank" rel="noopener noreferrer" class="block">
-					<div
-						class="aspect-video bg-[#222] border border-white/5 flex items-center justify-center relative group overflow-hidden yt-frame">
-						<picture>
-							<source type="image/webp" srcset="assets/yt-fly-200.webp 200w, assets/yt-fly-400.webp 400w" sizes="(max-width:640px) 100vw, 33vw">
-                            <img src="assets/yt-fly-400.webp" alt="Fly me to the moon - Red Vest"
-								class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="400" decoding="async">
-						</picture>
-						<div class="absolute inset-0 bg-burgundy opacity-0 group-hover:opacity-10 transition-opacity"></div>
-						<i
-							class="fa-brands fa-youtube text-4xl opacity-20 group-hover:opacity-100 group-hover:text-burgundy transition-all duration-500 z-10"></i>
-					</div>
-				</a>
-				<a href="https://www.youtube.com/watch?v=3yUndyYxe5s" target="_blank" rel="noopener noreferrer" class="block">
-					<div
-						class="aspect-video bg-[#222] border border-white/5 flex items-center justify-center relative group overflow-hidden yt-frame">
-						<picture>
-							<source type="image/webp" srcset="assets/yt-hit_the_road-200.webp 200w, assets/yt-hit_the_road-400.webp 400w" sizes="(max-width:640px) 100vw, 33vw">
-							<img src="assets/yt-hit_the_road-400.webp" alt="Hit the Road - Red Vest"
-								class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="400" decoding="async">
-						</picture>
-						<div class="absolute inset-0 bg-burgundy opacity-0 group-hover:opacity-10 transition-opacity"></div>
-						<i
-							class="fa-brands fa-youtube text-4xl opacity-20 group-hover:opacity-100 group-hover:text-burgundy transition-all duration-500 z-10"></i>
-					</div>
-				</a>
-				<a href="https://www.youtube.com/watch?v=v73Bj7pbpmw" target="_blank" rel="noopener noreferrer" class="block">
-					<div
-						class="aspect-video bg-[#222] border border-white/5 flex items-center justify-center relative group overflow-hidden yt-frame">
-						<picture>
-							<source type="image/webp" srcset="assets/yt-besame-200.webp 200w, assets/yt-besame-400.webp 400w" sizes="(max-width:640px) 100vw, 33vw">
-                            <img src="assets/yt-besame-400.webp" alt="Bésame mucho - Red Vest"
-								class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="400" decoding="async">
-						</picture>
-						<div class="absolute inset-0 bg-burgundy opacity-0 group-hover:opacity-10 transition-opacity"></div>
-						<i
-							class="fa-brands fa-youtube text-4xl opacity-20 group-hover:opacity-100 group-hover:text-burgundy transition-all duration-500 z-10"></i>
-					</div>
-				</a>
-				<a href="https://www.youtube.com/watch?v=juX0-DUq-DI" target="_blank" rel="noopener noreferrer" class="block">
-					<div
-						class="aspect-video bg-[#222] border border-white/5 flex items-center justify-center relative group overflow-hidden yt-frame">
-						<picture>
-							<source type="image/webp" srcset="assets/yt-dream-200.webp 200w, assets/yt-dream-400.webp 400w" sizes="(max-width:640px) 100vw, 33vw">
-							<img src="assets/yt-dream-400.webp" alt="Dream a little dream of me (live) - Red Vest"
-								class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="400" decoding="async">
-						</picture>
-						<div class="absolute inset-0 bg-burgundy opacity-0 group-hover:opacity-10 transition-opacity"></div>
-						<i
-							class="fa-brands fa-youtube text-4xl opacity-20 group-hover:opacity-100 group-hover:text-burgundy transition-all duration-500 z-10"></i>
-					</div>
-				</a>
-				<a href="https://www.youtube.com/watch?v=Lhr_Wz1Da14" target="_blank" rel="noopener noreferrer" class="block">
-					<div
-						class="aspect-video bg-[#222] border border-white/5 flex items-center justify-center relative group overflow-hidden yt-frame">
-						<picture>
-							<source type="image/webp" srcset="assets/yt-la_flaca-200.webp 200w, assets/yt-la_flaca-400.webp 400w" sizes="(max-width:640px) 100vw, 33vw">
-							<img src="assets/yt-la_flaca-400.webp" alt="La flaca (live) - Red Vest"
-								class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="400" decoding="async">
-						</picture>
-						<div class="absolute inset-0 bg-burgundy opacity-0 group-hover:opacity-10 transition-opacity"></div>
-						<i
-							class="fa-brands fa-youtube text-4xl opacity-20 group-hover:opacity-100 group-hover:text-burgundy transition-all duration-500 z-10"></i>
-					</div>
-				</a>
-				<a href="https://www.youtube.com/watch?v=MFTEsU4Vvks" target="_blank" rel="noopener noreferrer" class="block">
-					<div
-						class="aspect-video bg-[#222] border border-white/5 flex items-center justify-center relative group overflow-hidden yt-frame">
-						<picture>
-							<source type="image/webp" srcset="assets/yt-feeling-200.webp 200w, assets/yt-feeling-400.webp 400w" sizes="(max-width:640px) 100vw, 33vw">
-							<img src="assets/yt-feeling-400.webp" alt="Feeling good (live) - Red Vest"
-								class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="400" decoding="async">
-						</picture>
-						<div class="absolute inset-0 bg-burgundy opacity-0 group-hover:opacity-10 transition-opacity"></div>
-						<i
-							class="fa-brands fa-youtube text-4xl opacity-20 group-hover:opacity-100 group-hover:text-burgundy transition-all duration-500 z-10"></i>
-					</div>
-				</a>
-			</div>
+      </div>
+      <div class="tw__group">
+        <span class="tw__label">Detalle metálico</span>
+        <div class="tw__seg" data-tw="metal">
+          <button data-val="brass">Latón</button>
+          <button data-val="copper">Cobre</button>
+          <button data-val="none">Ninguno</button>
         </div>
-    </section>
-
-    <!-- SECCIÓN: CONTACTO (BOOKING) -->
-    <section id="contacto" class="py-32 px-8 reveal">
-        <div class="max-w-3xl mx-auto text-center">
-            <span class="text-burgundy text-[10px] tracking-[0.6em] uppercase mb-8 block">Disponibilidad</span>
-            <h2 class="font-cinzel text-3xl md:text-5xl mb-16 tracking-widest leading-tight">Reserve su fecha <br>en la
-                <span class="italic font-light">Sastrería</span>
-            </h2>
-
-			<form class="space-y-12 text-left hidden" aria-hidden="true">
-                <div class="grid md:grid-cols-2 gap-12">
-                    <div class="relative">
-                        <input type="text"
-                            class="w-full bg-transparent border-b border-white/10 py-4 outline-none focus:border-burgundy transition-colors text-[10px] tracking-widest uppercase"
-                            placeholder="Su Nombre">
-                    </div>
-                    <div class="relative">
-                        <input type="email"
-                            class="w-full bg-transparent border-b border-white/10 py-4 outline-none focus:border-burgundy transition-colors text-[10px] tracking-widest uppercase"
-                            placeholder="Email de contacto">
-                    </div>
-                </div>
-                <div class="relative">
-                    <input type="text"
-                        class="w-full bg-transparent border-b border-white/10 py-4 outline-none focus:border-burgundy transition-colors text-[10px] tracking-widest uppercase"
-                        placeholder="Fecha y Lugar del Evento">
-                </div>
-                <div class="relative text-center pt-8">
-                    <button type="submit" class="btn-luxury w-full md:w-auto">Enviar Solicitud</button>
-                </div>
-			</form>
-
-			<div class="py-12 text-center">
-				<p class="font-light text-lg leading-relaxed opacity-70">Contacta con <a href="mailto:booking@redvestmusic.com" class="text-burgundy font-medium underline underline-offset-4 booking-link">booking@redvestmusic.com</a></p>
-			</div>
-
-			<div class="mt-32 opacity-30 text-[9px] tracking-[0.6em] uppercase flex justify-center space-x-12">
-                <a href="https://www.instagram.com/redvestmusic" target="_blank" rel="noopener noreferrer" class="hover:text-burgundy transition hover:-translate-y-1 flex flex-col items-center gap-2">
-                    <i class="fa-brands fa-instagram text-2xl"></i>
-                    Instagram
-                </a>
-                <a href="https://www.youtube.com/@RedVestmusic" target="_blank" rel="noopener noreferrer" class="hover:text-burgundy transition hover:-translate-y-1 flex flex-col items-center gap-2">
-                    <i class="fa-brands fa-youtube text-2xl"></i>
-                    Youtube
-                </a>
-                <!-- <a href="#" class="hover:text-burgundy transition-colors flex flex-col items-center gap-2"><i class="fa-brands fa-spotify text-2xl"></i>Spotify</a> -->
-            </div>
+      </div>
+      <div class="tw__group">
+        <span class="tw__label">Fotografía</span>
+        <div class="tw__seg" data-tw="duotone">
+          <button data-val="on">Duotono</button>
+          <button data-val="off">Natural</button>
         </div>
-    </section>
+      </div>
+      <div class="tw__group">
+        <span class="tw__label">Grano de película</span>
+        <div class="tw__seg" data-tw="grain">
+          <button data-val="on">Activado</button>
+          <button data-val="off">Desactivado</button>
+        </div>
+      </div>
+    </div>
+  </aside>
 
-    <footer class="py-12 border-t border-white/5 text-center text-[8px] tracking-[0.8em] uppercase opacity-20">
-        &copy; 2026 Red Vest Music &mdash; La elegancia es nuestra partitura
-    </footer>
+  <div class="film-grain" aria-hidden="true"></div>
 
-		<script type="application/ld+json">
-		{
-			"@context": "https://schema.org",
-			"@graph": [
-				{
-					"@type": "VideoObject",
-                    "name": "Fly me to the moon - Red Vest",
-                    "description": "Fly me to the moon — interpretación en vivo por Red Vest.",
-                    "thumbnailUrl": "https://redvestmusic.com/assets/yt-fly-400.webp",
-                    "contentUrl": "https://www.youtube.com/watch?v=bHL8_QDHadM",
-                    "embedUrl": "https://www.youtube.com/embed/bHL8_QDHadM"
-				},
-				{
-					"@type": "VideoObject",
-                    "name": "Hit the Road - Red Vest",
-                    "description": "Hit the Road — interpretación en vivo por Red Vest.",
-                    "thumbnailUrl": "https://redvestmusic.com/assets/yt-hit_the_road-400.webp",
-                    "contentUrl": "https://www.youtube.com/watch?v=3yUndyYxe5s",
-                    "embedUrl": "https://www.youtube.com/embed/3yUndyYxe5s"
-                },
-                {
-                    "@type": "VideoObject",
-                    "name": "Bésame mucho - Red Vest",
-                    "description": "Bésame mucho — interpretación en vivo por Red Vest.",
-                    "thumbnailUrl": "https://redvestmusic.com/assets/yt-besame-400.webp",
-                    "contentUrl": "https://www.youtube.com/watch?v=v73Bj7pbpmw",
-                    "embedUrl": "https://www.youtube.com/embed/v73Bj7pbpmw"
-				},
-				{
-					"@type": "VideoObject",
-					"name": "Dream a little dream of me (live) - Red Vest",
-					"description": "Dream a little dream of me — interpretación en vivo por Red Vest.",
-					"thumbnailUrl": "https://redvestmusic.com/assets/yt-dream-400.webp",
-					"contentUrl": "https://www.youtube.com/watch?v=juX0-DUq-DI",
-					"embedUrl": "https://www.youtube.com/embed/juX0-DUq-DI"
-				},
-				{
-					"@type": "VideoObject",
-					"name": "La flaca (live) - Red Vest",
-					"description": "La flaca — interpretación en vivo por Red Vest.",
-					"thumbnailUrl": "https://redvestmusic.com/assets/yt-la_flaca-400.webp",
-					"contentUrl": "https://www.youtube.com/watch?v=Lhr_Wz1Da14",
-					"embedUrl": "https://www.youtube.com/embed/Lhr_Wz1Da14"
-				},
-				{
-					"@type": "VideoObject",
-					"name": "Feeling good (live) - Red Vest",
-					"description": "Feeling good — interpretación en vivo por Red Vest.",
-					"thumbnailUrl": "https://redvestmusic.com/assets/yt-feeling-400.webp",
-					"contentUrl": "https://www.youtube.com/watch?v=MFTEsU4Vvks",
-					"embedUrl": "https://www.youtube.com/embed/MFTEsU4Vvks"
-				}
-			]
-		}
-		</script>
-		<script src="script.js" defer></script>
+  <script src="app.js"></script>
+  <script src="tweaks.js"></script>
 </body>
 
 </html>
