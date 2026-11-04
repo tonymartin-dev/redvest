@@ -99,6 +99,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="contact.css">
   <link rel="icon" href="assets/favicon.png" type="image/png">
 
   <!-- Apply tweak state before paint to avoid flash -->
@@ -344,6 +345,39 @@
       <div class="reveal d2">
         <a href="mailto:booking@redvestmusic.com" class="booking__mail">booking@redvestmusic.com</a>
       </div>
+
+      <form name="contacto" method="POST" action="/gracias/" class="contact reveal d2" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contacto">
+        <input type="hidden" name="origen" value="home">
+        <p class="contact__trap" hidden><label>No rellenar: <input name="bot-field"></label></p>
+        <label class="contact__field">Nombre
+          <input type="text" name="nombre" required autocomplete="name">
+        </label>
+        <label class="contact__field">Email
+          <input type="email" name="email" required autocomplete="email">
+        </label>
+        <label class="contact__field">Teléfono (opcional)
+          <input type="tel" name="telefono" autocomplete="tel">
+        </label>
+        <label class="contact__field">Fecha del evento
+          <input type="date" name="fecha">
+        </label>
+        <label class="contact__field">Tipo de evento
+          <select name="tipo">
+            <option value="boda">Boda</option>
+            <option value="hotel">Hotel</option>
+            <option value="evento">Otro evento</option>
+          </select>
+        </label>
+        <label class="contact__field contact__field--wide">Mensaje
+          <textarea name="mensaje" rows="4" required></textarea>
+        </label>
+        <label class="contact__legal">
+          <input type="checkbox" name="privacidad" required>
+          <span>He leído la <a href="/privacidad/">política de privacidad</a> y acepto que usen mis datos para responder a mi consulta.</span>
+        </label>
+        <button type="submit" class="btn contact__submit">Enviar</button>
+      </form>
 
       <div class="social reveal d3">
         <a href="https://www.instagram.com/redvestmusic" target="_blank" rel="noopener" aria-label="Instagram">
