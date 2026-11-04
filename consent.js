@@ -19,12 +19,14 @@
   }
 
   function show() {
+    var old = document.querySelector('.consent');
+    if (old) old.remove();
     var box = document.createElement('div');
     box.className = 'consent';
     box.setAttribute('role', 'dialog');
     box.setAttribute('aria-label', 'Cookies');
     box.innerHTML =
-      '<p>Usamos cookies de Google para medir la eficacia de nuestros anuncios. <a href="/cookies/">Más información</a></p>' +
+      '<p>Usamos cookies de Google Ads solo para medir si un anuncio nuestro te ha traído hasta aquí. Si rechazas, no se instala ninguna. <a href="/cookies/">Más información</a></p>' +
       '<div class="consent__actions">' +
       '<button type="button" class="consent__btn" data-v="denied">Rechazar</button>' +
       '<button type="button" class="consent__btn" data-v="granted">Aceptar</button>' +
@@ -38,6 +40,13 @@
     });
     document.body.appendChild(box);
   }
+
+  document.addEventListener('click', function (e) {
+    if (e.target.closest && e.target.closest('[data-consent-open]')) {
+      e.preventDefault();
+      show();
+    }
+  });
 
   if (!stored()) show();
 })();
