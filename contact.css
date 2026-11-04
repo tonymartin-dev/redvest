@@ -61,3 +61,7 @@
 @media (max-width: 600px) {
   .contact { grid-template-columns: 1fr; }
 }
+
+.foot .social { margin: 0 0 1.6rem; gap: 2rem; }
+.foot .social a { gap: 0; }
+.foot .social svg { width: 1.2rem; height: 1.2rem; }
