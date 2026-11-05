@@ -95,9 +95,8 @@
   }
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="contact.css">
   <link rel="icon" href="assets/favicon.png" type="image/png">
@@ -290,11 +289,18 @@
       </div>
 
       <div class="media__grid">
-        <a class="vid reveal" href="https://www.youtube.com/watch?v=bHL8_QDHadM" target="_blank" rel="noopener">
+        <a class="vid reveal" data-season="resto" href="https://www.youtube.com/watch?v=bHL8_QDHadM" target="_blank" rel="noopener">
           <img src="assets/yt-fly-400.webp" alt="Fly Me To The Moon — Red Vest" loading="lazy" decoding="async">
           <div class="vid__overlay">
             <span class="vid__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3l16 9-16 9z"/></svg></span>
             <span class="vid__label">Fly Me To The Moon<span>Jazz standard · Sesión</span></span>
+          </div>
+        </a>
+        <a class="vid reveal" data-season="navidad" hidden href="https://www.youtube.com/watch?v=q-8Wjq5Qzt8" target="_blank" rel="noopener">
+          <img src="assets/yt-navidad-400.webp" alt="Clásicos navideños — Red Vest" loading="lazy" decoding="async">
+          <div class="vid__overlay">
+            <span class="vid__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3l16 9-16 9z"/></svg></span>
+            <span class="vid__label">Clásicos navideños<span>Villancicos · Sesión</span></span>
           </div>
         </a>
         <a class="vid reveal d1" href="https://www.youtube.com/watch?v=3yUndyYxe5s" target="_blank" rel="noopener">
@@ -333,6 +339,17 @@
           </div>
         </a>
       </div>
+      <script>
+        (function () {
+          var d = new Date(), m = d.getMonth(), day = d.getDate();
+          var navidad = m >= 10 || (m === 0 && day <= 6);
+          var show = navidad ? 'navidad' : 'resto';
+          var cards = document.querySelectorAll('.media__grid [data-season]');
+          for (var i = 0; i < cards.length; i++) {
+            cards[i].hidden = cards[i].getAttribute('data-season') !== show;
+          }
+        })();
+      </script>
     </div>
   </section>
 
