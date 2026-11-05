@@ -1,0 +1,9 @@
+.legal { padding: clamp(3rem, 8vh, 6rem) 0; font-size: 0.9rem; }
+.legal h1 { font-weight: 500; letter-spacing: 0.06em; margin: 2rem 0; }
+.legal h2 { font-size: 1rem; font-weight: 500; margin: 2rem 0 0.5rem; }
+.legal a { text-decoration: underline; text-underline-offset: 3px; }
+.legal__back { font-size: 0.7rem; letter-spacing: 0.3em; text-transform: uppercase; text-decoration: none !important; color: var(--ink-faint); }
+.legal__date { color: var(--ink-faint); margin-top: 2rem; }
+.legal table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+.legal th, .legal td { text-align: left; vertical-align: top; padding: 0.6rem 0.5rem; border-bottom: 1px solid var(--hair); }
+.legal-table-wrap { overflow-x: auto; }

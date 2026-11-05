@@ -98,6 +98,7 @@
   <link rel="preload" href="assets/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="contact.css">
   <link rel="icon" href="assets/favicon.png" type="image/png">
 
   <!-- Apply tweak state before paint to avoid flash -->
@@ -356,27 +357,57 @@
   <section id="booking" class="section booking grain-fixed" data-screen-label="Booking">
     <div class="wrap-tight">
       <span class="eyebrow center reveal" style="justify-content:center">Disponibilidad</span>
-      <h2 class="display booking__title reveal d1" style="margin-top:1.8rem">Reserve su fecha<br>en la <em>Sastrería</em></h2>
+      <h2 class="display booking__title reveal d1" style="margin-top:1.8rem">Reserve su fecha<br>en la <em>Sastrería Musical</em></h2>
       <p class="lede reveal d2" style="margin:2rem auto 3rem; text-align:center">Estamos confirmando agenda para la próxima temporada. Escríbanos y le enviaremos el dossier con repertorio, formatos y condiciones.</p>
       <div class="reveal d2">
         <a href="mailto:booking@redvestmusic.com" class="booking__mail">booking@redvestmusic.com</a>
       </div>
 
-      <div class="social reveal d3">
-        <a href="https://www.instagram.com/redvestmusic" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.9" fill="currentColor" stroke="none"/></svg>
-          Instagram
-        </a>
-        <a href="https://www.youtube.com/@redvestmusic" target="_blank" rel="noopener" aria-label="YouTube">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.2 9.2l5 2.8-5 2.8z" fill="currentColor" stroke="none"/></svg>
-          YouTube
-        </a>
-      </div>
+      <form name="contacto" method="POST" action="/gracias/" class="contact reveal d2" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contacto">
+        <input type="hidden" name="origen" value="home">
+        <p class="contact__trap" hidden><label>No rellenar: <input name="bot-field"></label></p>
+        <label class="contact__field">Nombre
+          <input type="text" name="nombre" required autocomplete="name">
+        </label>
+        <label class="contact__field">Email
+          <input type="email" name="email" required autocomplete="email">
+        </label>
+        <label class="contact__field">Teléfono (opcional)
+          <input type="tel" name="telefono" autocomplete="tel">
+        </label>
+        <label class="contact__field">Fecha del evento
+          <input type="date" name="fecha">
+        </label>
+        <label class="contact__field">Tipo de evento
+          <select name="tipo">
+            <option value="boda">Boda</option>
+            <option value="hotel">Hotel</option>
+            <option value="evento">Otro evento</option>
+          </select>
+        </label>
+        <label class="contact__field contact__field--wide">Mensaje
+          <textarea name="mensaje" rows="4" required></textarea>
+        </label>
+        <label class="contact__legal">
+          <input type="checkbox" name="privacidad" required>
+          <span>He leído la <a href="/privacidad/">política de privacidad</a> y acepto que usen mis datos para responder a mi consulta.</span>
+        </label>
+        <button type="submit" class="btn contact__submit">Enviar</button>
+      </form>
     </div>
   </section>
 
   <!-- ===================== FOOTER ===================== -->
   <footer class="foot">
+    <div class="social">
+      <a href="https://www.instagram.com/redvestmusic" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.9" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://www.youtube.com/@redvestmusic" target="_blank" rel="noopener" aria-label="YouTube">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.2 9.2l5 2.8-5 2.8z" fill="currentColor" stroke="none"/></svg>
+      </a>
+    </div>
     <p>© 2026 Red Vest Music — La elegancia es nuestra partitura</p>
   </footer>
 
