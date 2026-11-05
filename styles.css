@@ -668,7 +668,7 @@ a { color: inherit; text-decoration: none; }
   position: absolute; inset: 0;
   display: flex; flex-direction: column; justify-content: space-between;
   padding: 1.3rem;
-  background: linear-gradient(to top, color-mix(in srgb, var(--duo-base) 80%, transparent), transparent 55%);
+  background: linear-gradient(to top, var(--duo-base) 0%, color-mix(in srgb, var(--duo-base) 85%, transparent) 30%, transparent 90%);
 }
 .vid__play {
   align-self: flex-start;
@@ -686,6 +686,7 @@ a { color: inherit; text-decoration: none; }
   font-family: "Cinzel", serif;
   font-size: 1rem;
   letter-spacing: 0.04em;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.6);
 }
 .vid__label span { display: block; font-family: "Montserrat"; font-size: 0.55rem; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-top: 0.3rem; font-weight: 400; }
 
