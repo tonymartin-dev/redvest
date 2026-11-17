@@ -1,0 +1,41 @@
+.consent {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 1000;
+  max-width: 22rem;
+  padding: 0.9rem 1rem;
+  background: var(--bg);
+  color: var(--ink-soft);
+  border: 1px solid var(--hair-strong);
+  box-shadow: 0 8px 24px var(--shadow);
+  font: 0.78rem/1.5 "Montserrat", system-ui, sans-serif;
+}
+
+.consent p { margin: 0 0 0.7rem; }
+
+.consent__actions { display: flex; gap: 0.5rem; }
+
+.consent__btn {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--hair-strong);
+  font: inherit;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.consent__btn:hover,
+.consent__btn:focus-visible { border-color: var(--ink); }
+
+@media (max-width: 480px) {
+  .consent { left: 0.5rem; right: 0.5rem; bottom: 0.5rem; max-width: none; }
+}
+
+.consent a { color: var(--ink); text-decoration: underline; }
+
+.foot .foot__legal { margin-top: 0.8rem; }
+.foot .foot__legal a { text-decoration: underline; text-underline-offset: 3px; }
+

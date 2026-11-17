@@ -65,6 +65,3 @@
 .foot .social { margin: 0 0 1.6rem; gap: 2rem; }
 .foot .social a { gap: 0; }
 .foot .social svg { width: 1.2rem; height: 1.2rem; }
-
-.foot .foot__legal { margin-top: 0.8rem; }
-.foot .foot__legal a { text-decoration: underline; text-underline-offset: 3px; }
