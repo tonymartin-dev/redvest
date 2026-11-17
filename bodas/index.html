@@ -88,6 +88,7 @@
   <link rel="preload" href="../assets/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../fonts.css">
   <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../consent.css">
   <link rel="icon" href="../assets/favicon.png" type="image/png">
 
   <script>
@@ -157,6 +158,32 @@
     :root[data-hero="portico"] .hero { gap: clamp(2.4rem, 5vh, 4rem); }
     .hero__copy h1 { letter-spacing: 0.015em; }
   </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18553879747"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied'
+    });
+    try {
+      if (localStorage.getItem('rv-consent') === 'granted') {
+        gtag('consent', 'update', {
+          ad_storage: 'granted',
+          ad_user_data: 'granted',
+          ad_personalization: 'granted',
+          analytics_storage: 'granted'
+        });
+      }
+    } catch (e) {}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18553879747');
+  </script>
 </head>
 
 <body>
@@ -340,6 +367,7 @@
 
   <footer class="foot">
     <p>© 2026 Red Vest Music — Sastrería Musical para eventos exclusivos</p>
+    <p class="foot__legal"><a href="/cookies/">Política de cookies</a> · <a href="#" data-consent-open>Configurar cookies</a></p>
   </footer>
 
   <!-- ===================== TWEAKS PANEL ===================== -->
@@ -394,6 +422,7 @@
 
   <script src="../app.js"></script>
   <script src="../tweaks.js"></script>
+  <script src="../consent.js"></script>
 </body>
 
 </html>
