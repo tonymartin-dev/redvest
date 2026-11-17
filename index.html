@@ -100,6 +100,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="consent.css">
   <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="whatsapp.css">
   <link rel="icon" href="assets/favicon.png" type="image/png">
 
   <!-- Apply tweak state before paint to avoid flash -->
@@ -389,6 +390,9 @@
       <div class="reveal d2">
         <a href="mailto:booking@redvestmusic.com" class="booking__mail">booking@redvestmusic.com</a>
       </div>
+      <div class="reveal d2 wa-row">
+        <a href="https://wa.me/34600269239?s=p&text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20su%20m%C3%BAsica%20en%20directo%20para%20un%20evento." target="_blank" rel="noopener" class="wa-link"><img class="wa-icon" src="assets/whatsapp-icon.png" alt="" width="96" height="96"><span>Escríbanos por WhatsApp</span></a>
+      </div>
 
       <form name="contacto" method="POST" action="/gracias/" class="contact reveal d2" data-netlify="true" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="contacto">
@@ -491,6 +495,8 @@
 
   <script src="app.js"></script>
   <script src="tweaks.js"></script>
+  <a href="https://wa.me/34600269239?s=p&text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20su%20m%C3%BAsica%20en%20directo%20para%20un%20evento." target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp"><img class="wa-icon" src="assets/whatsapp-icon.png" alt="" width="96" height="96"></a>
+  <script src="whatsapp.js"></script>
   <script src="consent.js"></script>
 </body>
 
