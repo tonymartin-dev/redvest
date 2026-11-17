@@ -18,6 +18,10 @@
     });
   }
 
+  function reserveSpace(box) {
+    document.body.style.paddingBottom = box ? box.offsetHeight + 'px' : '';
+  }
+
   function show() {
     var old = document.querySelector('.consent');
     if (old) old.remove();
@@ -37,8 +41,13 @@
       save(v);
       apply(v);
       box.remove();
+      reserveSpace(null);
     });
     document.body.appendChild(box);
+    reserveSpace(box);
+    window.addEventListener('resize', function () {
+      if (box.isConnected) reserveSpace(box);
+    });
   }
 
   document.addEventListener('click', function (e) {
