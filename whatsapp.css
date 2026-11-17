@@ -1,0 +1,39 @@
+.wa-row { margin-top: 1.6rem; }
+
+.wa-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--hair-strong);
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  transition: color 0.4s ease, border-color 0.4s ease;
+}
+.wa-link:hover { color: var(--ink); border-color: #25D366; }
+.wa-link .wa-icon { width: 1.3rem; height: 1.3rem; }
+
+.wa-float { display: none; }
+
+@media (max-width: 768px) {
+  .wa-float {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 900;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 1px solid #25D366;
+    box-shadow: 0 4px 14px var(--shadow);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  .wa-float .wa-icon { width: 1.6rem; height: 1.6rem; }
+  .wa-float--hidden,
+  body:has(.consent) .wa-float { opacity: 0; visibility: hidden; pointer-events: none; }
+}
